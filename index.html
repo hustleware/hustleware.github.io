@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Hustleware</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico">
     <style>
 
         * {
@@ -23,22 +24,42 @@
             margin: 0 0 0 -189px;
             position: absolute;
             top: 50%;
-            width: 378px;
+            width: 379px;
         }
 		
 		img {
-			max-width: 378px;
+			max-width: 379px;
+		}
+		
+		::-moz-selection {
+			text-shadow: none;
+			color: #fff;
+			background: #231f20;
+		}
+
+		::selection {
+			text-shadow: none;
+			color: #fff;
+			background: #231f20;
+		}
+
+		img::selection {
+			background: 0 0;
+		}
+
+		img::-moz-selection {
+			background: 0 0;
 		}
 		
         @media only screen and (max-width: 375px) {
 
             body {
                 margin: 0 0 0 -139px;
-                width: 278px;
+                width: 279px;
             }
 			
 			img {
-				max-width: 278px;
+				max-width: 279px;
 			]
 
         }
