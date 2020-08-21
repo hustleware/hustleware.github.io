@@ -1,73 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Hustleware</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Hustleware</title>
+	<meta name="description" content="Landing page template for freelancers and professionals">
+	<meta name="keywords" content="landing page, template, freelancer, professional">
+	<meta name="author" content="Hustleware">
 	<link rel="shortcut icon" href="favicon.ico">
-    <style>
-
-        * {
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        html {
-			background-color: #231f20;
-            color: #fff;
-            font-family: sans-serif;
-            text-align: center;
-        }
-
-        body {
-            left: 50%;
-            margin: 0 0 0 -150px;
-            position: absolute;
-            top: 50%;
-            width: 300px;
-        }
-		
-		img {
-			max-width: 300px;
-		}
-		
-		::-moz-selection {
-			text-shadow: none;
-			color: #fff;
-			background: #231f20;
-		}
-
-		::selection {
-			text-shadow: none;
-			color: #fff;
-			background: #231f20;
-		}
-
-		img::selection {
-			background: 0 0;
-		}
-
-		img::-moz-selection {
-			background: 0 0;
-		}
-		
-        @media only screen and (max-width: 375px) {
-
-            body {
-                margin: 0 0 0 -139px;
-                width: 279px;
-            }
-			
-			img {
-				max-width: 279px;
-			]
-
-        }
-
-    </style>
+	<link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+	<link href="https://rsms.me/inter/inter.css" rel="stylesheet">
 </head>
-<body>
-    <img src="logo.svg">
-	
-	</body>
+
+<body class="text-white font-sans leading-normal tracking-normal" style="font-family: 'Inter', sans-serif; background-color: #231f20;">
+
+<section class="body-font">
+	<div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center content-center h-screen">
+		<img src="logo.svg" class="h-6" alt="Hustleware">
+		<div class="flex mt-8 mb-6 justify-center">
+			<div class="w-16 h-1 rounded-full bg-white bg-opacity-25 inline-flex"></div>
+		</div>
+		<div class="w-full md:w-1/2 flex flex-col items-center text-center">
+			<h1 class="title-font sm:text-4xl text-3xl mb-5 font-bold tracking-tight leading-tight">Mousemade landing page template for freelancers and professionals</h1>
+			<p class="mb-8 leading-relaxed text-white text-opacity-75">You should have your own professional page on the internet by now. Leave your email to join the waiting list and we'll let you know when Hustleware is ready.</p>
+			<div id="mc_embed_signup" class="flex w-full justify-center">
+				<form action="https://hustleware.us17.list-manage.com/subscribe/post?u=298f6c066cdd09f7cddd01b58&amp;id=6028d8e30d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate flex w-full justify-center" target="_blank" novalidate>
+					<input class="border-0 bg-gray-100 rounded mr-4 border border-gray-400 focus:outline-none focus:border-gray-900 text-base px-4 py-2 lg:w-full xl:w-1/2 w-2/4 md:w-full text-gray-900" placeholder="Enter your email address here" type="email" value="" name="EMAIL" id="mce-EMAIL" required>
+					<div style="position: absolute; left: -5000px;" aria-hidden="true">
+						<input type="text" name="b_298f6c066cdd09f7cddd01b58_6028d8e30d" tabindex="-1" value="">
+					</div>
+					<input class="inline-flex text-white bg-black bg-opacity-50 border-0 py-2 px-6 focus:outline-none hover:bg-white hover:bg-opacity-25 rounded text-lg font-medium transition duration-500 ease-in-out" type="submit" value="Notify me" name="subscribe" id="mc-embedded-subscribe" style="cursor: pointer;">
+				</form>
+			</div>
+			<p class="text-sm text-white text-opacity-75 mt-3 mb-8 w-full">Don't worry, your email is safe with us. We hate spam too.</p>
+		</div>
+	</div>
+</section>
+
+</body>
+
 </html>
