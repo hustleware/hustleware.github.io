@@ -39,19 +39,21 @@
 					</fieldset>
 				</form>
 			</div>
-			<p class="text-sm text-white mt-3 w-full cursor-pointer" onclick="toggleWhy('why')">Why we collect your data</p>
-			<p id="why" class="hidden text-sm text-white text-opacity-75 mt-3 mb-8 w-full">This form collects your email so we can add you to our email list and send you our newsletter and information about Hustleware events and products. Please read our <a href="https://www.iubenda.com/privacy-policy/94484360" class="text-gray-100 iubenda-nostyle no-brand iubenda-embed">Privacy Policy</a> to understand how we protect and manage your data.</p>
+			<p class="q text-sm text-white mt-3 cursor-pointer">Why we collect your data</p>
+			<p class="a hidden text-sm text-white text-opacity-75 mt-3 mb-8 w-full">This form collects your email so we can add you to our email list and send you our newsletter and information about Hustleware events and products. Please read our <a href="https://www.iubenda.com/privacy-policy/94484360" class="text-gray-100 iubenda-nostyle no-brand iubenda-embed">Privacy Policy</a> to understand how we protect and manage your data.</p>
 		</div>
 	</div>
 </section>
 
 </body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-function toggleWhy(collapseID) {
-	document.getElementById(collapseID).classList.toggle("hidden");
-	document.getElementById(collapseID).classList.toggle("block");
-	}
+$(document).ready(function(){
+  $(".q").click(function(){
+    $(".a").toggle("slow");
+  });
+});
 </script>
 <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
 
