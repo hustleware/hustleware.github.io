@@ -1,5 +1,6 @@
 body {
-	background: #231f20 url(bg.jpg) no-repeat 0 0;
+  /*background: #231f20 url(bg.jpg) no-repeat 0 0;*/
+  background-color: #231f20;
 	background-size: cover;
 }
 
