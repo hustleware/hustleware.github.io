@@ -75,6 +75,9 @@ img.cover {
 	img.cover {
 		height: 25rem;
 	}
+	.credit:hover {
+		left: -215px;
+	}
 }
 
 @media screen and (max-width: 640px) {
