@@ -1,7 +1,19 @@
 body {
-  /*background: #231f20 url(bg.jpg) no-repeat 0 0;*/
   background-color: #231f20;
 	background-size: cover;
+}
+
+.description {
+  color: #c8c7c7;
+}
+
+.description a {
+  color: #fff;
+}
+
+.description a:hover,
+.description a:focus  {
+  color: #c8c7c7;
 }
 
 .noselect {
