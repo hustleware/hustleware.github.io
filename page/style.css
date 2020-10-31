@@ -75,8 +75,21 @@ img.cover {
 	img.cover {
 		height: 25rem;
 	}
+	.credit {
+		left: 0;
+		animation-delay: 5s;
+		animation-fill-mode: forwards;  
+	}
 	.credit:hover {
-		left: -215px;
+		left: inherit;
+	}
+	@keyframes slideInFromLeft {
+		0% {
+			transform: translateX(0%);
+		}
+		100% {
+			transform: translateX(-215px);
+		}
 	}
 }
 
