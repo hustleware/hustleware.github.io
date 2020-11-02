@@ -100,5 +100,9 @@ img.cover {
 }
 
 .fancybox-progress {
-	background-color: #3182ce;
+	background-color: #fff;
+}
+
+.fancybox-thumbs__list a:before {
+	border: 3px solid #fff;
 }
