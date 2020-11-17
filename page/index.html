@@ -40,6 +40,12 @@
 	<span class="px-4">Powered by Hustleware</span>
 	<img class="w-12 h-12" src="hw-icon.svg">
 </a>
+<header id="header" class="opacity-0 fixed w-full bg-white transition duration-300 ease-in-out">
+  <div class="container mx-auto p-5 flex flex-wrap items-center justify-between">
+    <div class="page-header-profile"></div>
+    <div class="page-header-cta"></div>
+  </div>
+</header>
 <div class="container mx-auto">
 	<div class="page-cover flex flex-wrap bg-white mx-2 lg:mx-0 rounded-b-md overflow-hidden">
 	</div>
@@ -54,7 +60,11 @@
 		<div class="page-cta text-center lg:text-left">
 		</div>
 	</div>
-	<div class="post flex flex-wrap mx-0 lg:-mx-4 mt-10 mb-10"></div>
+  <div class="post flex flex-wrap mx-0 lg:-mx-4 mt-10 mb-10"></div>
+  <div class="flex flex-wrap items-center justify-center mb-16">
+    <a href="#" id="load" class="hidden py-4 px-6 border-2 bg-gray-100 hover:bg-gray-300 text-center text-gray-600 font-semibold rounded transition duration-300 ease-in-out">Show me more</a>
+    <span class="nomore hidden text-gray-600">You're all caught up for now</span>
+  </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
