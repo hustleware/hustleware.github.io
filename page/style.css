@@ -21,14 +21,15 @@ img.cover {
 	text-overflow: ellipsis; 
 }
 
-.post-title a, .post-text a {
+.page-text a,
+.post-text a {
 	color: #1F2937;
 }
 
-.post-title a:hover, .post-title a:focus,
+/*.page-text a:hover, .page-text a:focus,
 .post-text a:hover, .post-text a:focus {
 	color: #4B5563;
-}
+}*/
 
 .page-cta a {
 	min-width: 175px;
