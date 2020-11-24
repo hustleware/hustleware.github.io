@@ -2,6 +2,10 @@ body {
 	font-family: 'Inter', sans-serif;
 }
 
+.container {
+    max-width: 1280px;
+}
+
 img.cover {
 	height: 32rem;
 }
@@ -15,6 +19,10 @@ img.cover {
 	width: 350px; 
 	overflow: hidden;
 	text-overflow: ellipsis; 
+}
+
+.post-title a, .post-text a {
+	color: #000;
 }
 
 .page-cta a {
