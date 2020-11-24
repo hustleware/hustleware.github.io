@@ -22,7 +22,12 @@ img.cover {
 }
 
 .post-title a, .post-text a {
-	color: #000;
+	color: #1F2937;
+}
+
+.post-title a:hover, .post-title a:focus,
+.post-text a:hover, .post-text a:focus {
+	color: #4B5563;
 }
 
 .page-cta a {
