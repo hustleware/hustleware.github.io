@@ -1,57 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Hustleware</title>
-	<meta name="description" content="It's how you hustle.">
-	<meta name="keywords" content="hustle, hustleware">
-	<meta name="author" content="Hustleware">
-	<meta property="og:title" content="Hustleware">
-	<meta property="og:url" content="https://hustleware.com">
-	<meta property="og:description" content="It's how you hustle.">
-	<meta property="og:type" content="website">
-	<meta property="og:image" content="https://hustleware.com/social.png" />
-	<meta name="twitter:card" content="summary">
-	<meta property="twitter:url" content="https://hustleware.com">
-	<meta name="twitter:title" content="Hustleware">
-	<meta name="twitter:description" content="It's how you hustle.">
-	<meta name="twitter:image:src" content="https://hustleware.com/social.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="manifest" href="site.webmanifest">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#c0392b">
-	<meta name="msapplication-TileColor" content="#c0392b">
-	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
-	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-	<link rel="stylesheet" href="style.css">
-</head>
-
-<body class="text-white font-sans leading-normal tracking-normal;" style="font-family: 'Inter', sans-serif;">
-
-<section class="body-font">
-	<div class="container mx-auto flex flex-col justify-center items-center content-center h-screen">
-		<img src="logo.svg" class="h-14" alt="Hustleware">
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Hustleware</title>
+		<meta name="description" content="It's how you hustle.">
+		<meta name="keywords" content="hustle, hustleware">
+		<meta name="author" content="Hustleware">
+		<meta property="og:title" content="Hustleware">
+		<meta property="og:url" content="https://hustleware.com">
+		<meta property="og:description" content="It's how you hustle.">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://hustleware.com/social.png" />
+		<meta name="twitter:card" content="summary">
+		<meta property="twitter:url" content="https://hustleware.com">
+		<meta name="twitter:title" content="Hustleware">
+		<meta name="twitter:description" content="It's how you hustle.">
+		<meta name="twitter:image:src" content="https://hustleware.com/social.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#c0392b">
+		<meta name="msapplication-TileColor" content="#c0392b">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
+    </head>
+	
+    <body onload="genQuote()">
+	
+	<div class="header">
+		<div class="container">
+			<h1 class="logo"><a href=""><img src="img/logo.png" alt="Hustleware"></a></h1>
+		</div>
 	</div>
-</section>
+	
+	<div class="content animated fadeIn">
+		<div class="middle-container">
+			<div class="middle-cell fadeIn">
+				<div class="container">
+					<div id="quote"></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="bottom-container row">
+				<div class="col-md-6 bottom-left">
+					<a id="more-quote" class="more-quote" href="#">Still not motivated. I need more inspiring words.</a>
+				</div>
+				<div class="col-md-6 bottom-right">
+					<a href="https://facebook.com/hustleware">Facebook</a> &middot; <a href="https://twitter.com/gethustleware">Twitter</a> &middot; <a href="https://instagram.com/gethustleware">Instagram</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="top" class="border"></div>
+	<div id="left" class="border"></div>
+	<div id="right" class="border"></div>
+	<div id="bottom" class="border"></div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 
-</body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EKRYCGNM2L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-EKRYCGNM2L');
-</script>
-
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EKRYCGNM2L"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-EKRYCGNM2L');
+	</script>
+    </body>
 </html>
