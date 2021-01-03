@@ -21,7 +21,7 @@ var quotes = [
 ];
 
 function genQuote() {
-	var randNum = Math.floor(Math.random() * 17) + 1;	
+	var randNum = Math.floor(Math.random() * 18) + 1;	
 	document.getElementById('quote').innerHTML = quotes[randNum];
 }
 
