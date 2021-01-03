@@ -5,7 +5,7 @@ var quotes = [
 	"Hustle until your haters ask if you're hiring.",
 	"Postpone procrastination.",
 	"Hustle until your idols become you're rivals.",
-	"Stop killing time because time is killing you.",
+	"Do something instead of killing time. Because time is killing you.",
 	"Hustle until your signature becomes an autograph.",
 	"Let your fear of regret be stronger than your fear of anything else.",
 	"Hustle until your bank account looks like a phone number.",
