@@ -18,7 +18,9 @@ var quotes = [
 	"Don't do the same shit and expect different results.",
 	"You don't have to be great to embrace the hustle, but you have to embrace the hustle to be great.",
 	"It's not about how much sleep you get. It's about what you do when you're awake.",
-	"The past is in your head, but the future is in your hands."
+	"The past is in your head, but the future is in your hands.",
+	"The more you slack, the less you stack.",
+	"Don't dream about success. Work for it.",	
 ];
 
 function genQuote() {
