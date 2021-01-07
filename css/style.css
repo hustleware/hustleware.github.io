@@ -229,6 +229,9 @@ display: none;;
 	/*.content, .footer {
 		position: static;
 	}*/
+	a.more-quote span {
+		display: none;
+	}
 }
 
 ::-moz-selection {
