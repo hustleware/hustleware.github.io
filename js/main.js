@@ -2,14 +2,14 @@ var quotes = [
 	"One day or day one. You decide.",
 	"Hustle in silence. Let your success make the noise.",
 	"Have patience. All things are difficult before they are easy.",
-	"Hustle until your haters ask if you're hiring.",
+	"You will never be ready. Just start.",
 	"Postpone procrastination.",
 	"Hustle until your idols become you're rivals.",
 	"Quotes won't work unless you do.",
 	"Hustle until your signature becomes an autograph.",
 	"Let your fear of regret be stronger than your fear of anything else.",
 	"Hustle until your bank account looks like a phone number.",
-	"You can't have a million-dollar dream with a minimum-wage work ethic.",
+	"Work while they sleep. Learn while they party. Save while they spend. Then live like they dream.",
 	"Hustle until your name no longer needs an introduction.",
 	"Discipline is choosing what you want now and what you want most.",	
 	"Hustle until it pains because being broke as fuck hurts even more.",
@@ -17,16 +17,16 @@ var quotes = [
 	"Good things may come to those who wait, but only the ones left by those who hustle.",
 	"Don't do the same shit and expect different results.",
 	"You don't have to be great to embrace the hustle, but you have to embrace the hustle to be great.",
-	"Don't count the days. Make the days count.",
+	"Stop counting the days and start making those days count.",
 	"The past is in your head, but the future is in your hands.",
-	"The more you slack, the less you stack.",
-	"Don't dream about success. Work for it.",
-	"No more excuses. Yesterday you said tomorrow. Today you'll say done.",
+	"Falling down is an accident. Staying down is a choice.",
+	"Do something instead of killing time. Because time is killing you.",
+	"Yesterday you said tomorrow. Today you'll say done.",
 	"You've got everything it takes, but it will take everything you've got.",
 ];
 
 function genQuote() {
-	var randNum = Math.floor(Math.random() * 24) + 1;	
+	var randNum = Math.floor(Math.random() * 23) + 1;	
 	document.getElementById('quote').innerHTML = quotes[randNum];
 }
 

@@ -121,6 +121,7 @@ img {
 	font-size: 84px;
 	line-height: 96px;
 	letter-spacing: -2px;
+	width: 80%;
 }
 
 #quote span {
@@ -207,6 +208,7 @@ ul.social li:first-child:before {
 	#quote {
 		font-size: 60px;
 		line-height: 72px;
+		width: 100%;
 	}
 }
 
