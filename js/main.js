@@ -4,7 +4,7 @@ var quotes = [
 	"Have patience. All things are difficult before they are easy.",
 	"You will never be ready. Just start.",
 	"Postpone procrastination.",
-	"Hustle until your idols become your rivals, and until your haters ask if you're hiring.",
+	"Start where you are. Use what you have. Do what you can.",
 	"Quotes won't work unless you do.",
 	"Hustle until your signature becomes an autograph.",
 	"Let your fear of regret be stronger than your fear of anything else.",
@@ -17,16 +17,17 @@ var quotes = [
 	"Good things may come to those who wait, but only the ones left by those who hustle.",
 	"Don't do the same shit and expect different results.",
 	"You don't have to be great to embrace the hustle, but you have to embrace the hustle to be great.",
-	"Stop counting the days and start making those days count.",
+	"Don't watch the clock; do what it does. Keep going.",
 	"The past is in your head, but the future is in your hands.",
 	"Remember why you started.",
 	"Do something instead of killing time. Because time is killing you.",
 	"Yesterday you said tomorrow. Today you'll say done.",
 	"You've got everything it takes, but it will take everything you've got.",
+	"You can't just beat the person who never gives up.",
 ];
 
 function genQuote() {
-	var randNum = Math.floor(Math.random() * 23) + 1;	
+	var randNum = Math.floor(Math.random() * 24) + 1;	
 	document.getElementById('quote').innerHTML = quotes[randNum];
 }
 
