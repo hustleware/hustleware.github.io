@@ -11,7 +11,7 @@ var quotes = [
 	"Hustle until your bank account looks like a phone number.",
 	"Work while they sleep. Learn while they party. Save while they spend. Then live like they dream.",
 	"Hustle until your name no longer needs an introduction.",
-	"Discipline is choosing what you want now and what you want most.",	
+	"Discipline is choosing what you want most over what you want now.",	
 	"Hustle until it pains because being broke as fuck hurts even more.",
 	"Never look down on anyone unless you are admiring their shoes.",
 	"Good things may come to those who wait, but only the ones left by those who hustle.",
