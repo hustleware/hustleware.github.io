@@ -50,7 +50,7 @@ $(document).ready(function() {
 	$('#more-quote').click(function(event) {
 		event.preventDefault();
 		var $fadeElems = $('#quote').animate({opacity: 0}, function() {
-			spinQuote();
+			genQuote();
 			$fadeElems.animate({opacity: 1});
 		});
 	});
