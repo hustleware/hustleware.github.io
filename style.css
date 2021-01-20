@@ -25,3 +25,27 @@ body {
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
+
+::-moz-selection {
+  text-shadow: none;
+color: #fff;
+  background: #1f1c1d;
+}
+
+::selection {
+  text-shadow: none;
+color: #fff;
+  background: #1f1c1d;
+}
+
+img::selection {
+  background: 0 0;
+}
+
+img::-moz-selection {
+  background: 0 0;
+}
+
+body {
+  webkit-tap-highlight-color: #1f1c1d;
+}
