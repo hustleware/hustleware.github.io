@@ -9,8 +9,8 @@ $(document).ready(function() {
     
     $("#social-proof").animate({bottom:"10px"},1000,"easeInOutBack",function(){
       $(this).delay(5000).animate({bottom:"-110px"},500,"easeInQuart",function(){
-        setTimeout(function(){call_social_proof()}, Math.floor(3000 + Math.random() * 10000));
-        console.log(Math.floor(3000 + Math.random() * 10000));
+        setTimeout(function(){call_social_proof()}, Math.floor(3000 + Math.random() * 15000));
+        console.log(Math.floor(3000 + Math.random() * 15000));
       });
       
     });
