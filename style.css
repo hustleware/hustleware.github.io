@@ -53,6 +53,8 @@ body {
   /*filter:grayscale(100%);*/
 }
 
+/* begin hellobar */
+
 .hellobar {
   background-color: #1f1c1d;;
   position: absolute;
@@ -134,3 +136,5 @@ body {
 }
 .hellobar-toggle:hover ~ .hellobar-arrow:after { background-color: #ccc; }
 .hellobar-toggle:hover ~ .hellobar-arrow:before { border-bottom-color: #ccc; border-top-color: #ccc; }
+
+/* end hellobar */
