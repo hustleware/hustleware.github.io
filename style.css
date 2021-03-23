@@ -63,6 +63,7 @@ body {
   right: 0;
   color: #fff;
   font-size: 14px;
+  text-transform: uppercase;
 }
 .hellobar a { margin-left: 5px; color: rgba(255, 255, 255, 0.7); font-size: 11px; letter-spacing: 1px; }
 .hellobar a:hover { color: rgba(255, 255, 255, 1);}
