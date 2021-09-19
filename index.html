@@ -36,6 +36,9 @@
 
 <body class="font-sans leading-normal tracking-normal;" style="font-family: 'Inter', sans-serif;">
 
+<div id="fb-root"></div>
+<div id="fb-customer-chat" class="fb-customerchat"></div>
+
 <section class="body-font">
 	<div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center content-center xl:h-screen">
 		<img src="logo.svg" class="sm:h-11 h-10" alt="Hustleware">
@@ -46,7 +49,6 @@
 			<h1 class="title-font text-4xl mb-5 font-bold tracking-tight leading-tight">Because getting shit done does not mean doing all that shit by yourself</h1>
 			<p class="mb-10 leading-relaxed description">Hustleware is a multi-disciplinary design studio based in the Philippines, offering full-scale branding services and well-designed merchandise for people who hustle. Like us on Facebook to stay up-to-date with news and updates.</p>
 			<div class="fb-page" data-href="https://www.facebook.com/hustleware/" data-tabs="" data-width="300" data-height="" data-small-header="true" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hustleware" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hustleware">Hustleware</a></blockquote></div>
-			<div id="fb-root"></div>
 		</div>
 	</div>
 </section>
@@ -55,6 +57,27 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/tl_PH/sdk.js#xfbml=1&version=v12.0" nonce="h1ZspFPP"></script>
+<!-- messenger -->
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "115328396964946");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function() {
+	FB.init({
+	  xfbml            : true,
+	  version          : 'v12.0'
+	});
+  };
+
+  (function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+	fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 <!-- mentioned -->
 <script type="text/javascript" src="https://t.mentioned.app/track/track.js" id="mentioned-by-script" token="Y6A66KsdYm1kK_B6Q8iQmkX8ku8-beV3yzGO77vqhijFdnSin8Tiut3eyXtWf_1hgW4" host="hustleware.com"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
