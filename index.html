@@ -36,19 +36,16 @@
 
 <body class="font-sans leading-normal tracking-normal;" style="font-family: 'Inter', sans-serif;">
 
-<div id="fb-root"></div>
-<div id="fb-customer-chat" class="fb-customerchat"></div>
-
 <section class="body-font">
 	<div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center content-center xl:h-screen">
 		<img src="logo.svg" class="sm:h-11 h-10" alt="Hustleware">
 		<div class="flex mt-8 mb-6 justify-center">
 			<div class="w-16 h-1 rounded-full bg-black bg-opacity-25 inline-flex"></div>
 		</div>
-		<div class="w-full md:w-5/12 flex flex-col items-center text-center">
+		<div class="w-full md:w-8/12 lg:w-6/12 flex 2xl:w-5/12 flex-col items-center text-center">
 			<h1 class="title-font text-4xl mb-5 font-bold tracking-tight leading-tight">Because getting shit done does not mean doing all that shit by yourself</h1>
-			<p class="mb-10 leading-relaxed description">Hustleware is a multi-disciplinary design studio based in the Philippines, offering full-scale branding services and well-designed merchandise for people who hustle. Like us on Facebook to stay up-to-date with news and updates.</p>
-			<div class="fb-page" data-href="https://www.facebook.com/hustleware/" data-tabs="" data-width="300" data-height="" data-small-header="true" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hustleware" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hustleware/">...</a></blockquote></div>
+			<p class="mb-12 leading-relaxed description">Hustleware is a multi-disciplinary design studio based in the Philippines, offering full-scale branding services and well-designed merchandise for people who hustle. Like us on Facebook to stay up-to-date with news and updates.</p>
+			<a href="https://www.facebook.com/hustleware/"><img src="find-us-on-fb.png" class="sm:h-11 h-10" alt="Find us on Facebook"></a>
 		</div>
 	</div>
 </section>
@@ -57,27 +54,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/tl_PH/sdk.js#xfbml=1&version=v12.0" nonce="h1ZspFPP"></script>
-<!-- messenger -->
-<script>
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "115328396964946");
-  chatbox.setAttribute("attribution", "biz_inbox");
-
-  window.fbAsyncInit = function() {
-	FB.init({
-	  xfbml            : true,
-	  version          : 'v12.0'
-	});
-  };
-
-  (function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) return;
-	js = d.createElement(s); js.id = id;
-	js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-	fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKRYCGNM2L"></script>
 <script>
