@@ -1,30 +1,13 @@
-body {
-  background-color: #231f20;
-}
-
-.description {
-  color: #c8c7c7;
-}
-
-.description a {
-  color: #fff;
-}
-
-.description a:hover,
-.description a:focus  {
-  color: #c8c7c7;
-}
-
 ::-moz-selection {
   text-shadow: none;
 color: #fff;
-  background: #1f1c1d;
+  background: #1a1a1a;
 }
 
 ::selection {
   text-shadow: none;
 color: #fff;
-  background: #1f1c1d;
+  background: #1a1a1a;
 }
 
 img::selection {
@@ -33,24 +16,6 @@ img::selection {
 
 img::-moz-selection {
   background: 0 0;
-}
-
-body {
-  webkit-tap-highlight-color: #1f1c1d;
-}
-
-#video-background {
-  position: fixed;
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto; 
-  height: auto;
-  z-index: -100;
-  max-width: none;
-  opacity: 0.05;
-  /*filter:grayscale(100%);*/
 }
 
 /* begin hellobar */
