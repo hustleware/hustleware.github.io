@@ -10011,8 +10011,9 @@ div[class^='bg-dark'] div[class^='bg-white'] .stroke-text, div[class^='bg-dark']
   font-family: 'Manrope', sans-serif;
 }
 
+.logo .wordmark img,
 .wordmark img {
-  max-height: 24px;
+  max-height: 20px;
 }
 
 .material-symbols-outlined {
@@ -10032,5 +10033,12 @@ div[class^='bg-dark'] div[class^='bg-white'] .stroke-text, div[class^='bg-dark']
 @media (min-width: 1025px) {
   .column-count-2 {
     column-count: 2;
+  }
+}
+
+@media (min-width: 381px) {
+  .logo .wordmark img,
+  .wordmark img {
+    max-height: 22px;
   }
 }
