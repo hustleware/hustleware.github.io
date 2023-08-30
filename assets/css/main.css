@@ -10046,3 +10046,93 @@ div[class^='bg-dark'] div[class^='bg-white'] .stroke-text, div[class^='bg-dark']
     max-height: 22px;
   }
 }
+
+/* MailtoUI */
+
+.mailtoui-modal {
+  color: #777;
+  font-size: 90%;
+}
+
+.mailtoui-modal a:hover,
+.mailtoui-modal a:focus {
+  border-bottom: none;
+}
+
+.mailtoui-modal-close {
+  font-size: 28px;
+}
+
+.mailtoui-modal-close:focus,
+.mailtoui-modal-close:hover {
+ font-weight: 400; 
+}
+
+.mailtoui-modal-head {
+  background-color: #0A0908;
+}
+
+.mailtoui-modal-title {
+  color: #fff;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+.mailtoui-modal-close:focus,
+.mailtoui-modal-close:hover {
+  color: #fff;
+}
+
+.mailtoui-modal-body {
+  background-color: #221E1B;
+}
+
+.mailtoui-button-content,
+.mailtoui-button-copy {
+  background-color: #171412;
+  color: #777;
+}
+
+.mailtoui-button:hover .mailtoui-button-content,
+.mailtoui-button:focus .mailtoui-button-content {
+  background-color: #0A0908;
+  color: #fff;
+}
+
+.mailtoui-modal-content {
+  border-radius: 10px;
+  background: #221E1B;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.02);
+}
+
+.mailtoui-button-content {
+  box-shadow: none;
+}
+
+.mailtoui-button-icon {
+  top: -2px;
+}
+
+.mailtoui-button-content:hover,
+.mailtoui-button-content:focus,
+.mailtoui-button-copy:hover,
+.mailtoui-button-copy:focus {
+  background-color: #0A0908;
+  color: #fff;
+}
+
+.mailtoui-button-copy-clicked,
+.mailtoui-button-copy-clicked:hover,
+.mailtoui-button-copy-clicked:focus {
+  background-color: #0A0908;
+  color: #fff;
+}
+
+.mailtoui-email-address {
+  background-color: #0A0908;
+  color: #777;
+}
+
+.mailtoui-brand {
+  display: none;
+}
