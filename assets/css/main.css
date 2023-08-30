@@ -10030,6 +10030,10 @@ div[class^='bg-dark'] div[class^='bg-white'] .stroke-text, div[class^='bg-dark']
   column-gap: 40px;
 }
 
+.line-height-0 {
+  line-height: 0;
+}
+
 @media (min-width: 1025px) {
   .column-count-2 {
     column-count: 2;
