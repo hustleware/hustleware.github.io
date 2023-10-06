@@ -10016,13 +10016,9 @@ div[class^='bg-dark'] div[class^='bg-white'] .stroke-text, div[class^='bg-dark']
   max-height: 20px;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 200,
-  'GRAD' 0,
-  'opsz' 24;
-  font-size: 48px !important;
+.signature {
+  height: 48px;
+  opacity: 0.7;
 }
 
 .column-count-2 {
