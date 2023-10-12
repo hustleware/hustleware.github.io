@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+.pagination .page-item .page-link:hover {
+    color: #0A0908;
+}
+
+.pagination .page-item.active .page-link {
+    color: #0A0908;
+}
+
+.bg-image.bg-image-gradient-dark:before {
+    background-image: linear-gradient(to top, #0A0908, rgba(20, 22, 24, 0.2));
+}
+
+.bg-image.bg-image-gradient-dark-reverse:before {
+    background-image: linear-gradient(to top, rgba(20, 22, 24, 0.2), #0A0908);
+}
+
+input,
+textarea {
+    font: 400 14px "Inter", sans-serif;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #0A0908;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+  letter-spacing: -.05em;
+}
+
+h4, h5,
+.h4, .h5 {
+  letter-spacing: -.025em;
+}
+
+h1, .h1 {
+    font-size: 2.5em;
+    line-height: 1.4;
+}
+
+h2, .h2 {
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+h3, .h3 {
+    font-size: 1.75em;
+    line-height: 1.5;
+}
+
+h4, .h4 {
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+
+h5, .h5 {
+    font-size: 1.25em;
+    line-height: 1.8;
+}
+
+h6, .h6 {
+    font-size: 1em;
+    line-height: 1.87;
+}
+
+.display-4 {
+    font-size: 3.8em;
+}
+
+.display-5 {
+    font-size: 3.25em;
+}
+
+@media (max-width: 767.98px) {
+    .display-5 {
+        font-size: 2.75em;
+    }
+}
+
+.font-larger {
+    font-size: larger;
+}
+
+.accordion li .accordion-title:before, .accordion li .accordion-title:after {
+    background: #0A0908;
+}
+
+.accordion li .accordion-content {
+    padding: 0;
+}
+
+.accordion li .accordion-content:after {
+    height: 10px;
+}
+
+.accordion.style-2 li {
+    margin-bottom: 20px;
+}
+
+.accordion.style-2 li .accordion-title {
+    padding: 0 0 20px;
+}
+
+.accordion.style-2 li .accordion-content {
+    padding: 0;
+}
+
+.accordion.style-3 li.active .accordion-title {
+    background: #0A0908;
+}
+
+div[class^='bg-dark'] .accordion.style-3 li.active .accordion-title:before, div[class^='bg-dark'] .accordion.style-3 li.active .accordion-title:after, div[class*=' bg-dark'] .accordion.style-3 li.active .accordion-title:before, div[class*=' bg-dark'] .accordion.style-3 li.active .accordion-title:after, .bg-black .accordion.style-3 li.active .accordion-title:before, .bg-black .accordion.style-3 li.active .accordion-title:after {
+    background: #0A0908;
+}
+
+div[class^='bg-dark'] .accordion.style-3 li.active .accordion-title h1, div[class^='bg-dark'] .accordion.style-3 li.active .accordion-title h2, div[class^='bg-dark'] .accordion.style-3 li.active .accordion-title h3, div[class^='bg-dark'] .accordion.style-3 li.active .accordion-title h4, div[class^='bg-dark'] .accordion.style-3 li.active .accordion-title h5, div[class^='bg-dark'] .accordion.style-3 li.active .accordion-title h6, div[class*=' bg-dark'] .accordion.style-3 li.active .accordion-title h1, div[class*=' bg-dark'] .accordion.style-3 li.active .accordion-title h2, div[class*=' bg-dark'] .accordion.style-3 li.active .accordion-title h3, div[class*=' bg-dark'] .accordion.style-3 li.active .accordion-title h4, div[class*=' bg-dark'] .accordion.style-3 li.active .accordion-title h5, div[class*=' bg-dark'] .accordion.style-3 li.active .accordion-title h6, .bg-black .accordion.style-3 li.active .accordion-title h1, .bg-black .accordion.style-3 li.active .accordion-title h2, .bg-black .accordion.style-3 li.active .accordion-title h3, .bg-black .accordion.style-3 li.active .accordion-title h4, .bg-black .accordion.style-3 li.active .accordion-title h5, .bg-black .accordion.style-3 li.active .accordion-title h6 {
+    color: #0A0908;
+}
+
+a:hover {
+    color: #0A0908;
+}
+
+.button {
+    color: #0A0908;
+    font: 400 14px "Inter", sans-serif;
+}
+
+.button:hover {
+    color: #0A0908;
+}
+
+.button-gray:hover, .button-gray:focus, a.button-gray:hover, a.button-gray:focus {
+    color: #0A0908;
+}
+
+.button-dark:hover, .button-dark:focus, a.button-dark:hover, a.button-dark:focus {
+    background: #0A0908;
+}
+
+.button-white:hover, .button-white:focus, a.button-white:hover, a.button-white:focus {
+    color: #0A0908;
+}
+
+.button-outline-gray:hover, .button-outline-gray:focus, a.button-outline-gray:hover, a.button-outline-gray:focus {
+    border-color: #0A0908;
+    color: #0A0908;
+}
+
+.button-outline-dark:hover, .button-outline-dark:focus, a.button-outline-dark:hover, a.button-outline-dark:focus {
+    border-color: rgba(20, 22, 24, 0.2);
+    color: #0A0908;
+}
+
+.button-fancy-1-white, a.button-fancy-1-white {
+    color: #0A0908;
+}
+
+.button-fancy-2-white, a.button-fancy-2-white {
+    color: #0A0908;
+}
+
+.button-fancy-2-outline-gray:after, a.button-fancy-2-outline-gray:after {
+    background: #0A0908;
+}
+
+.button-fancy-2-outline-dark:after, a.button-fancy-2-outline-dark:after {
+    background: #0A0908;
+}
+
+.button-fancy-2-outline-white:hover, a.button-fancy-2-outline-white:hover {
+    color: #0A0908;
+}
+
+.button-fancy-3-gray:hover {
+    color: #0A0908;
+}
+
+.button-fancy-3-outline-gray:hover {
+    color: #0A0908;
+}
+  
+.button-fancy-3-white {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.button-fancy-3-white:hover {
+    color: #fff;
+}
+
+.button-fancy-3-outline-white {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.button-fancy-3-outline-white:hover {
+    color: #fff;
+}
+
+.button-text-1,
+.button-text-2,
+.button-text-3 {
+  color: #0A0908;
+  font-family: "Inter", sans-serif;
+}
+
+.button-text-1:after {
+    background: #0A0908;
+}
+
+.button-text-2:after {
+    background: #0A0908;
+}
+
+.button-text-3:before {
+    background: #0A0908;
+}
+
+.button-circle, a.button-circle {
+    color: #0A0908;
+}
+
+.button-circle-gray:hover, .button-circle-gray:focus, a.button-circle-gray:hover, a.button-circle-gray:focus {
+    color: #0A0908;
+}
+
+.button-circle-dark:hover, .button-circle-dark:focus, a.button-circle-dark:hover, a.button-circle-dark:focus {
+    background: #0A0908;
+}
+
+.button-circle-white:hover, .button-circle-white:focus, a.button-circle-white:hover, a.button-circle-white:focus {
+    color: #0A0908;
+}
+
+.button-circle-outline-gray:hover, .button-circle-outline-gray:focus, a.button-circle-outline-gray:hover, a.button-circle-outline-gray:focus {
+    border-color: #0A0908;
+    color: #0A0908;
+}
+
+.button-circle-outline-dark:hover, .button-circle-outline-dark:focus, a.button-circle-outline-dark:hover, a.button-circle-outline-dark:focus {
+    color: #0A0908;
+}
+
+.button-circle-black, a.button-circle-black {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+.button-circle-black:hover, .button-circle-black:focus, a.button-circle-black:hover, a.button-circle-black:focus {
+    color: #fff;
+}
+
+a[class^='button-ct'] .button-ct-text {
+    color: #0A0908;
+}
+
+.button-ct-gray:hover .button-ct-icon, a.button-ct-gray:hover .button-ct-icon {
+    color: #0A0908;
+}
+
+.button-ct-dark:hover .button-ct-icon, a.button-ct-dark:hover .button-ct-icon {
+    background: #0A0908;
+}
+
+.button-ct-white:hover .button-ct-icon, a.button-ct-white:hover .button-ct-icon {
+    color: #0A0908;
+}
+
+.button-ct-outline-gray .button-ct-icon, a.button-ct-outline-gray .button-ct-icon {
+    color: #0A0908;
+}
+
+.button-ct-outline-gray:hover .button-ct-icon, a.button-ct-outline-gray:hover .button-ct-icon {
+    border-color: #0A0908;
+}
+
+.font-family-primary .button, .font-family-primary.button {
+    font-family: "Inter", sans-serif;
+}
+
+.fancy-box-2 h1, .fancy-box-2 h2, .fancy-box-2 h3, .fancy-box-2 h4, .fancy-box-2 h5, .fancy-box-2 h6 {
+    color: #0A0908;
+}
+
+.fancy-box-2 a:not([class*=' button']):not([class^='button']):hover, .fancy-box-2 a:not([class*=' button']):not([class^='button']):focus {
+    color: #0A0908;
+}
+
+.f-box.style-1 .f-box-icon {
+    color: #0A0908;
+}
+
+.f-box.style-1:hover {
+    border-color: #0A0908;
+}
+
+.f-box.style-2 .f-box-icon {
+    color: #0A0908;
+}
+
+.sf-box.dark .sf-box-icon {
+    background: #0A0908;
+}
+
+.sf-box.outline-dark:hover .sf-box-icon {
+    background: #0A0908;
+}
+
+.sf-box.outline-white:hover .sf-box-icon * {
+    color: #0A0908;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-next:focus, .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-prev:focus {
+    color: #0A0908;
+}
+
+.owl-carousel .owl-dots .owl-dot:before {
+    border: 1px solid #0A0908;
+}
+
+.owl-carousel .owl-dots .owl-dot:after {
+    background: #0A0908;
+}
+
+.owl-carousel.owl-dots-overlap .owl-dots, .owl-carousel.owl-dots-overlap-left .owl-dots, .owl-carousel.owl-dots-overlap-right .owl-dots {
+    background: #0A0908;
+}
+
+.owl-carousel.owl-nav-overlap .owl-nav button.owl-prev,
+.owl-carousel.owl-nav-overlap .owl-nav button.owl-next {
+  background: #0A0908;
+}
+
+.owl-carousel.owl-nav-overlap-left .owl-nav button.owl-prev,
+.owl-carousel.owl-nav-overlap-left .owl-nav button.owl-next, .owl-carousel.owl-nav-overlap-right .owl-nav button.owl-prev,
+.owl-carousel.owl-nav-overlap-right .owl-nav button.owl-next {
+  background: #0A0908;
+}
+
+.comment-box .comment-reply a {
+    font-family: "Inter", sans-serif;
+}
+
+.fm-toggle span {
+    background: #0A0908;
+}
+
+.fm-toggle span:before, .fm-toggle span:after {
+    background: #0A0908;
+}
+
+.fm-wrapper {
+    background: #0A0908;
+}
+
+.fm-wrapper .fm li {
+    font-family: "Inter", sans-serif;
+}
+
+div[class^='bg-white'].fm-wrapper .fm-close span:before, div[class^='bg-white'].fm-wrapper .fm-close span:after, div[class*=' bg-white'].fm-wrapper .fm-close span:before, div[class*=' bg-white'].fm-wrapper .fm-close span:after, .bg-light-gray.fm-wrapper .fm-close span:before, .bg-light-gray.fm-wrapper .fm-close span:after, .bg-gray.fm-wrapper .fm-close span:before, .bg-gray.fm-wrapper .fm-close span:after {
+    background: #0A0908;
+}
+
+.fm-wrapper.bg-black .fm-close span {
+    background: #0A0908;
+}
+
+.header .logo a {
+    color: #0A0908;
+}
+  
+.header .logo a:hover {
+    color: #0A0908;
+}
+
+.header .m-toggle span {
+    background: #0A0908;
+}
+
+.header .m-toggle span:before, .header .m-toggle span:after {
+    background: #0A0908;
+}
+
+.header-menu-wrapper .header-menu .m-item .m-link {
+    font-family: "Inter", sans-serif;
+}
+
+.header-menu-wrapper .header-menu .m-item .m-link.m-dropdown-toggle:hover:before, .header-menu-wrapper .header-menu .m-item .m-link.m-dropdown-toggle:hover:after {
+    background: #0A0908;
+}
+
+.header-menu-wrapper .header-menu .m-item .m-dropdown .m-dropdown-item .m-dropdown-link.m-subdropdown-toggle:hover:before, .header-menu-wrapper .header-menu .m-item .m-dropdown .m-dropdown-item .m-dropdown-link.m-subdropdown-toggle:hover:after {
+    background: #0A0908;
+}
+
+.header-menu-wrapper .close-button span:before, .header-menu-wrapper .close-button span:after {
+    background: #0A0908;
+}
+
+.header.dark {
+    background: #0A0908;
+}
+
+
+@media (max-width: 991.98px) {
+    .header-menu-wrapper .header-menu .m-item .m-link.active {
+      color: #0A0908;
+    }
+    .header-menu-wrapper .header-menu .m-item .m-dropdown .m-dropdown-item .m-dropdown-link.active {
+      color: #0A0908;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .header-menu-wrapper .header-menu.dropdown-dark .m-item .m-dropdown {
+      background: #0A0908;
+    }
+    .header-menu-wrapper .header-menu.dropdown-dark .m-item .m-dropdown .m-dropdown-item .m-subdropdown {
+      background: #0A0908;
+    }
+  }
+
+.portfolio-filter ul {
+    font-family: "Inter", sans-serif;
+}
+
+.portfolio-filter ul li:before {
+    background: #0A0908;
+}
+
+.portfolio-filter ul li.active, .portfolio-filter ul li.mixitup-control-active, .portfolio-filter ul li:hover {
+    color: #0A0908;
+}
+
+.portfolio-title-overlay.hover-style-3 .portfolio-item a .portfolio-hover .portfolio-hover-box:before, .owl-carousel.hover-style-3 .portfolio-item a .portfolio-hover .portfolio-hover-box:before {
+    background: #0A0908;
+}
+
+.portfolio-title-overlay.hover-style-4 .portfolio-item a .portfolio-hover .portfolio-hover-box, .owl-carousel.hover-style-4 .portfolio-item a .portfolio-hover .portfolio-hover-box {
+    background: #0A0908;
+}
+
+.portfolio-title-outside .portfolio-item .portfolio-title {
+    padding: 24px 24px;
+}
+
+.portfolio-title-outside .portfolio-item .portfolio-title-small {
+    padding: 20px 24px 0 0;
+}
+
+.portfolio-title-outside .portfolio-item .portfolio-title-small h3 {
+    line-height: 1.3;
+}
+
+.portfolio-carousel .portfolio-carousel-item a .portfolio-title .line {
+    color: #0A0908;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -.05em;
+}
+
+.preloader-1 div .loader-path {
+    stroke: #0A0908;
+}
+
+.preloader-2 div span {
+    background: #0A0908;
+    background: linear-gradient(to right, #0A0908 10%, rgba(24, 27, 30, 0) 40%);
+}
+
+.preloader-2 div span:before {
+    background: #0A0908;
+}
+
+.preloader-3 div span {
+    border-color: #0A0908 rgba(20, 22, 24, 0.2) rgba(20, 22, 24, 0.2) rgba(20, 22, 24, 0.2);
+}
+
+.product-quantity .qnt .dec:before, .product-quantity .qnt .inc:before {
+    background: #0A0908;
+}
+
+.product-quantity .qnt .inc:after {
+    background: #0A0908;
+}
+
+.product-info-box .nav .nav-item .nav-link {
+    font-family: "Inter", sans-serif;
+}
+
+.product-info-box .nav .nav-item .nav-link:before {
+    background: #0A0908;
+}
+  
+.product-info-box .nav .nav-item .nav-link.active {
+    color: #0A0908;
+}
+
+.sm-wrapper .sm .sm-item .sm-link {
+    font-family: "Inter", sans-serif;
+}
+
+.sm-wrapper .sm .sm-item .sm-link.sm-dropdown-toggle:hover:before, .sm-wrapper .sm .sm-item .sm-link.sm-dropdown-toggle:hover:after {
+    background: #0A0908;
+}
+  
+.sm-wrapper .sm .sm-item .sm-link.active {
+    color: #0A0908;
+}
+
+.sm-wrapper .sm .sm-item .sm-dropdown .sm-dropdown-item .sm-dropdown-link.sm-subdropdown-toggle:hover:before, .sm-wrapper .sm .sm-item .sm-dropdown .sm-dropdown-item .sm-dropdown-link.sm-subdropdown-toggle:hover:after {
+    background: #0A0908;
+}
+
+.sm-wrapper .sm .sm-item .sm-dropdown .sm-dropdown-item .sm-dropdown-link.active {
+    color: #0A0908;
+}
+
+.sm-wrapper .sm-close span:before, .sm-wrapper .sm-close span:after {
+    background: #0A0908;
+}
+
+.sm-mobile .sm-logo a {
+    color: #0A0908;
+}
+
+.sm-mobile .sm-logo a:hover {
+    color: #0A0908;
+}
+
+.sm-mobile .sm-toggle span {
+    background: #0A0908;
+}
+
+.sm-mobile .sm-toggle span:before, .sm-mobile .sm-toggle span:after {
+    background: #0A0908;
+}
+
+@media (min-width: 992px) {
+    .sm-wrapper.dark {
+      background: #0A0908;
+    }
+}
+
+.sm-mobile.dark {
+    background: #0A0908;
+}
+
+.stm-toggle-wrapper .stm-toggle span {
+    background: #0A0908;
+}
+
+.stm-toggle-wrapper .stm-toggle span:before, .stm-toggle-wrapper .stm-toggle span:after {
+    background: #0A0908;
+}
+
+.stm-wrapper .stm .stm-item .stm-link {
+    font-family: "Inter", sans-serif;
+}
+
+.stm-wrapper .stm .stm-item .stm-link.stm-dropdown-toggle:hover:before, .stm-wrapper .stm .stm-item .stm-link.stm-dropdown-toggle:hover:after {
+    background: #0A0908;
+}
+
+.stm-wrapper .stm .stm-item .stm-link.active {
+    color: #0A0908;
+}
+
+.stm-wrapper .stm .stm-item .stm-dropdown .stm-dropdown-item .stm-dropdown-link.stm-subdropdown-toggle:hover:before, .stm-wrapper .stm .stm-item .stm-dropdown .stm-dropdown-item .stm-dropdown-link.stm-subdropdown-toggle:hover:after {
+    background: #0A0908;
+}
+
+.stm-wrapper .stm .stm-item .stm-dropdown .stm-dropdown-item .stm-dropdown-link.active {
+    color: #0A0908;
+}
+
+.stm-wrapper .stm-close span:before, .stm-wrapper .stm-close span:after {
+    background: #0A0908;
+}
+
+.stm-toggle-wrapper.dark {
+    background: #0A0908;
+}
+
+@media (min-width: 992px) {
+    .stm-wrapper.dark {
+      background: #0A0908;
+    }
+  }
+
+.bg-dark {
+    background: #0A0908 !important;
+}
+
+.bg-light-content h1, div[class^='bg-white'] h1, div[class*=' bg-white'] h1, .bg-light-gray h1, .bg-gray h1, div[class^='bg-dark'] div[class^='bg-white'] h1, div[class^='bg-dark'] div[class*=' bg-white'] h1, div[class^='bg-dark'] .bg-light-gray h1, div[class^='bg-dark'] .bg-gray h1, div[class*=' bg-dark'] div[class^='bg-white'] h1, div[class*=' bg-dark'] div[class*=' bg-white'] h1, div[class*=' bg-dark'] .bg-light-gray h1, div[class*=' bg-dark'] .bg-gray h1, .bg-black div[class^='bg-white'] h1, .bg-black div[class*=' bg-white'] h1, .bg-black .bg-light-gray h1, .bg-black .bg-gray h1, .bg-green div[class^='bg-white'] h1, .bg-green div[class*=' bg-white'] h1, .bg-green .bg-light-gray h1, .bg-green .bg-gray h1, .bg-red div[class^='bg-white'] h1, .bg-red div[class*=' bg-white'] h1, .bg-red .bg-light-gray h1, .bg-red .bg-gray h1, .bg-yellow-orange div[class^='bg-white'] h1, .bg-yellow-orange div[class*=' bg-white'] h1, .bg-yellow-orange .bg-light-gray h1, .bg-yellow-orange .bg-gray h1, .bg-light-content h2, div[class^='bg-white'] h2, div[class*=' bg-white'] h2, .bg-light-gray h2, .bg-gray h2, div[class^='bg-dark'] div[class^='bg-white'] h2, div[class^='bg-dark'] div[class*=' bg-white'] h2, div[class^='bg-dark'] .bg-light-gray h2, div[class^='bg-dark'] .bg-gray h2, div[class*=' bg-dark'] div[class^='bg-white'] h2, div[class*=' bg-dark'] div[class*=' bg-white'] h2, div[class*=' bg-dark'] .bg-light-gray h2, div[class*=' bg-dark'] .bg-gray h2, .bg-black div[class^='bg-white'] h2, .bg-black div[class*=' bg-white'] h2, .bg-black .bg-light-gray h2, .bg-black .bg-gray h2, .bg-green div[class^='bg-white'] h2, .bg-green div[class*=' bg-white'] h2, .bg-green .bg-light-gray h2, .bg-green .bg-gray h2, .bg-red div[class^='bg-white'] h2, .bg-red div[class*=' bg-white'] h2, .bg-red .bg-light-gray h2, .bg-red .bg-gray h2, .bg-yellow-orange div[class^='bg-white'] h2, .bg-yellow-orange div[class*=' bg-white'] h2, .bg-yellow-orange .bg-light-gray h2, .bg-yellow-orange .bg-gray h2, .bg-light-content h3, div[class^='bg-white'] h3, div[class*=' bg-white'] h3, .bg-light-gray h3, .bg-gray h3, div[class^='bg-dark'] div[class^='bg-white'] h3, div[class^='bg-dark'] div[class*=' bg-white'] h3, div[class^='bg-dark'] .bg-light-gray h3, div[class^='bg-dark'] .bg-gray h3, div[class*=' bg-dark'] div[class^='bg-white'] h3, div[class*=' bg-dark'] div[class*=' bg-white'] h3, div[class*=' bg-dark'] .bg-light-gray h3, div[class*=' bg-dark'] .bg-gray h3, .bg-black div[class^='bg-white'] h3, .bg-black div[class*=' bg-white'] h3, .bg-black .bg-light-gray h3, .bg-black .bg-gray h3, .bg-green div[class^='bg-white'] h3, .bg-green div[class*=' bg-white'] h3, .bg-green .bg-light-gray h3, .bg-green .bg-gray h3, .bg-red div[class^='bg-white'] h3, .bg-red div[class*=' bg-white'] h3, .bg-red .bg-light-gray h3, .bg-red .bg-gray h3, .bg-yellow-orange div[class^='bg-white'] h3, .bg-yellow-orange div[class*=' bg-white'] h3, .bg-yellow-orange .bg-light-gray h3, .bg-yellow-orange .bg-gray h3, .bg-light-content h4, div[class^='bg-white'] h4, div[class*=' bg-white'] h4, .bg-light-gray h4, .bg-gray h4, div[class^='bg-dark'] div[class^='bg-white'] h4, div[class^='bg-dark'] div[class*=' bg-white'] h4, div[class^='bg-dark'] .bg-light-gray h4, div[class^='bg-dark'] .bg-gray h4, div[class*=' bg-dark'] div[class^='bg-white'] h4, div[class*=' bg-dark'] div[class*=' bg-white'] h4, div[class*=' bg-dark'] .bg-light-gray h4, div[class*=' bg-dark'] .bg-gray h4, .bg-black div[class^='bg-white'] h4, .bg-black div[class*=' bg-white'] h4, .bg-black .bg-light-gray h4, .bg-black .bg-gray h4, .bg-green div[class^='bg-white'] h4, .bg-green div[class*=' bg-white'] h4, .bg-green .bg-light-gray h4, .bg-green .bg-gray h4, .bg-red div[class^='bg-white'] h4, .bg-red div[class*=' bg-white'] h4, .bg-red .bg-light-gray h4, .bg-red .bg-gray h4, .bg-yellow-orange div[class^='bg-white'] h4, .bg-yellow-orange div[class*=' bg-white'] h4, .bg-yellow-orange .bg-light-gray h4, .bg-yellow-orange .bg-gray h4, .bg-light-content h5, div[class^='bg-white'] h5, div[class*=' bg-white'] h5, .bg-light-gray h5, .bg-gray h5, div[class^='bg-dark'] div[class^='bg-white'] h5, div[class^='bg-dark'] div[class*=' bg-white'] h5, div[class^='bg-dark'] .bg-light-gray h5, div[class^='bg-dark'] .bg-gray h5, div[class*=' bg-dark'] div[class^='bg-white'] h5, div[class*=' bg-dark'] div[class*=' bg-white'] h5, div[class*=' bg-dark'] .bg-light-gray h5, div[class*=' bg-dark'] .bg-gray h5, .bg-black div[class^='bg-white'] h5, .bg-black div[class*=' bg-white'] h5, .bg-black .bg-light-gray h5, .bg-black .bg-gray h5, .bg-green div[class^='bg-white'] h5, .bg-green div[class*=' bg-white'] h5, .bg-green .bg-light-gray h5, .bg-green .bg-gray h5, .bg-red div[class^='bg-white'] h5, .bg-red div[class*=' bg-white'] h5, .bg-red .bg-light-gray h5, .bg-red .bg-gray h5, .bg-yellow-orange div[class^='bg-white'] h5, .bg-yellow-orange div[class*=' bg-white'] h5, .bg-yellow-orange .bg-light-gray h5, .bg-yellow-orange .bg-gray h5, .bg-light-content h6, div[class^='bg-white'] h6, div[class*=' bg-white'] h6, .bg-light-gray h6, .bg-gray h6, div[class^='bg-dark'] div[class^='bg-white'] h6, div[class^='bg-dark'] div[class*=' bg-white'] h6, div[class^='bg-dark'] .bg-light-gray h6, div[class^='bg-dark'] .bg-gray h6, div[class*=' bg-dark'] div[class^='bg-white'] h6, div[class*=' bg-dark'] div[class*=' bg-white'] h6, div[class*=' bg-dark'] .bg-light-gray h6, div[class*=' bg-dark'] .bg-gray h6, .bg-black div[class^='bg-white'] h6, .bg-black div[class*=' bg-white'] h6, .bg-black .bg-light-gray h6, .bg-black .bg-gray h6, .bg-green div[class^='bg-white'] h6, .bg-green div[class*=' bg-white'] h6, .bg-green .bg-light-gray h6, .bg-green .bg-gray h6, .bg-red div[class^='bg-white'] h6, .bg-red div[class*=' bg-white'] h6, .bg-red .bg-light-gray h6, .bg-red .bg-gray h6, .bg-yellow-orange div[class^='bg-white'] h6, .bg-yellow-orange div[class*=' bg-white'] h6, .bg-yellow-orange .bg-light-gray h6, .bg-yellow-orange .bg-gray h6 {
+  color: #0A0908;
+}
+
+.bg-light-content a:not([class*=' button']):not([class^='button']):not(.m-dropdown-link):not(.m-subdropdown-link):hover, div[class^='bg-white'] a:not([class*=' button']):not([class^='button']):not(.m-dropdown-link):not(.m-subdropdown-link):hover, div[class*=' bg-white'] a:not([class*=' button']):not([class^='button']):not(.m-dropdown-link):not(.m-subdropdown-link):hover, .bg-light-gray a:not([class*=' button']):not([class^='button']):not(.m-dropdown-link):not(.m-subdropdown-link):hover, .bg-gray a:not([class*=' button']):not([class^='button']):not(.m-dropdown-link):not(.m-subdropdown-link):hover, .bg-light-content a:not([class*=' button']):not([class^='button']):not(.m-dropdown-link):not(.m-subdropdown-link):focus, div[class^='bg-white'] a:not([class*=' button']):not([class^='button']):not(.m-dropdown-link):not(.m-subdropdown-link):focus, div[class*=' bg-white'] a:not([class*=' button']):not([class^='button']):not(.m-dropdown-link):not(.m-subdropdown-link):focus, .bg-light-gray a:not([class*=' button']):not([class^='button']):not(.m-dropdown-link):not(.m-subdropdown-link):focus, .bg-gray a:not([class*=' button']):not([class^='button']):not(.m-dropdown-link):not(.m-subdropdown-link):focus {
+    color: #0A0908;
+}
+
+.font-family-primary {
+    font-family: "Inter", sans-serif;
+}
+
+.font-family-secondary {
+    font-family: "Inter", sans-serif;
+}
+
+*.text-dark {
+    color: #0A0908;
+}
+
+.stroke-text {
+    color: #0A0908;
+    -webkit-text-stroke-color: #0A0908;
+}
+
+div[class^='bg-dark'] div[class^='bg-white'] .stroke-text, div[class^='bg-dark'] div[class*=' bg-white'] .stroke-text, div[class^='bg-dark'] .bg-light-gray .stroke-text, div[class^='bg-dark'] .bg-gray .stroke-text, div[class*=' bg-dark'] div[class^='bg-white'] .stroke-text, div[class*=' bg-dark'] div[class*=' bg-white'] .stroke-text, div[class*=' bg-dark'] .bg-light-gray .stroke-text, div[class*=' bg-dark'] .bg-gray .stroke-text, .bg-black div[class^='bg-white'] .stroke-text, .bg-black div[class*=' bg-white'] .stroke-text, .bg-black .bg-light-gray .stroke-text, .bg-black .bg-gray .stroke-text, .bg-green div[class^='bg-white'] .stroke-text, .bg-green div[class*=' bg-white'] .stroke-text, .bg-green .bg-light-gray .stroke-text, .bg-green .bg-gray .stroke-text, .bg-red div[class^='bg-white'] .stroke-text, .bg-red div[class*=' bg-white'] .stroke-text, .bg-red .bg-light-gray .stroke-text, .bg-red .bg-gray .stroke-text, .bg-yellow-orange div[class^='bg-white'] .stroke-text, .bg-yellow-orange div[class*=' bg-white'] .stroke-text, .bg-yellow-orange .bg-light-gray .stroke-text, .bg-yellow-orange .bg-gray .stroke-text {
+    color: #0A0908;
+    -webkit-text-stroke-color: #0A0908;
+}
+
+.owl-carousel {
+    cursor: grab;
+  }
+  
+  .owl-carousel.owl-grab {
+    cursor: grabbing;
+  }
+  
+  .ldquo {
+    position: relative;
+  }
+  
+  .ldquo::before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    content: "“";
+    font-size: inherit;
+  }
+  
+  .manrope {
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .logo .wordmark img,
+  .wordmark img {
+    max-height: 20px;
+  }
+  
+  .signature {
+    height: 48px;
+    opacity: 0.7;
+  }
+  
+  .column-count-2 {
+    column-count: 1;
+    column-gap: 40px;
+  }
+  
+  .line-height-0 {
+    line-height: 0;
+  }
+  
+  @media (min-width: 1025px) {
+    .column-count-2 {
+      column-count: 2;
+    }
+  }
+  
+  @media (min-width: 381px) {
+    .logo .wordmark img,
+    .wordmark img {
+      max-height: 22px;
+    }
+  }
+  
+  /* Start MailtoUI */
+  
+  .mailtoui-modal {
+    color: #777;
+    font-size: 90%;
+  }
+  
+  .mailtoui-modal a:hover,
+  .mailtoui-modal a:focus {
+    border-bottom: none;
+  }
+  
+  .mailtoui-modal-close {
+    font-size: 28px;
+  }
+  
+  .mailtoui-modal-close:focus,
+  .mailtoui-modal-close:hover {
+   font-weight: 400; 
+  }
+  
+  .mailtoui-modal-head {
+    background-color: #0A0908;
+  }
+  
+  .mailtoui-modal-title {
+    color: #fff;
+    font-size: 100%;
+    font-weight: 400;
+  }
+  
+  .mailtoui-modal-close:focus,
+  .mailtoui-modal-close:hover {
+    color: #fff;
+  }
+  
+  .mailtoui-modal-body {
+    background-color: #221E1B;
+  }
+  
+  .mailtoui-button-content,
+  .mailtoui-button-copy {
+    background-color: #171412;
+    color: #777;
+  }
+  
+  .mailtoui-button:hover .mailtoui-button-content,
+  .mailtoui-button:focus .mailtoui-button-content {
+    background-color: #0A0908;
+    color: #fff;
+  }
+  
+  .mailtoui-modal-content {
+    border-radius: 10px;
+    background: #221E1B;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.02);
+  }
+  
+  .mailtoui-button-content {
+    box-shadow: none;
+  }
+  
+  .mailtoui-button-icon {
+    top: -2px;
+  }
+  
+  .mailtoui-button-content:hover,
+  .mailtoui-button-content:focus,
+  .mailtoui-button-copy:hover,
+  .mailtoui-button-copy:focus {
+    background-color: #0A0908;
+    color: #fff;
+  }
+  
+  .mailtoui-button-copy-clicked,
+  .mailtoui-button-copy-clicked:hover,
+  .mailtoui-button-copy-clicked:focus {
+    background-color: #0A0908;
+    color: #fff;
+  }
+  
+  .mailtoui-email-address {
+    background-color: #0A0908;
+    color: #777;
+  }
+  
+  .mailtoui-brand {
+    display: none;
+  }
+
+/* End MailtoUI */
