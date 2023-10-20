@@ -39,7 +39,7 @@
 	<body data-preloader="1" class="bg-dark">
 
 		<!-- Sidebar Toggle Menu -->
-		<div class="stm-toggle-wrapper">
+		<div class="stm-toggle-wrapper" data-sal="slide-right" data-sal-delay="100">
 		 	<div class="top logo">
 				 <a href="/"><img class="margin-0" src="assets/images/logo.png" alt=""></a>
 		 	</div>
@@ -58,6 +58,8 @@
 			<ul class="stm">
 				<li class="stm-item"><a class="stm-link" href="#about">About</a></li>
 				<li class="stm-item"><a class="stm-link" href="#services">Services</a></li>
+				<li class="stm-item"><a class="stm-link" href="#benefits">Benefits</a></li>
+				<li class="stm-item"><a class="stm-link" href="#process">Process</a></li>
 				<li class="stm-item"><a class="stm-link" href="#pricing">Pricing</a></li>
 				<li class="stm-item"><a class="stm-link" href="#faq">FAQ</a></li>
 				<li class="stm-item"><a class="stm-link mailtoui" href="mailto:%68%65%6c%6c%6f%40%68%75%73%74%6c%65%77%61%72%65%2e%63%6f%6d">Contact</a></li>
@@ -78,23 +80,26 @@
 			<!-- end Scroll to Top -->
 
 			<!-- Header -->
-			<div class="header header-lg dark border-bottom">
+			<div class="header header-lg dark border-bottom" data-sal="slide-down" data-sal-delay="100">
 				<div class="container">
 					<div class="logo">
 						<a href="/" class="wordmark"><img src="assets/images/hustleware-logo.svg" alt="Hustleware"></a>
 					</div>
 					<div class="header-menu-extra line-height-0">
-						<span id="clock" class="manrope"></span>
+						<div class="timezone">
+							<span class="ti-time font-small mr-1"></span>
+							<span id="clock" class="manrope"></span>
+						</div>
 					</div>
 				</div><!-- end container -->
 			</div>
 			<!-- end Header -->
 
 			<!-- Hero section -->
-			<div class="section-xl" id="about">
+			<div class="section-xl" id="about" data-sal="fade" data-sal-delay="100">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12 col-xl-10">
+						<div class="col-lg-12 col-xl-10">
 							<div class="margin-bottom-40">
 								<p class="uppercase letter-spacing-1">Meet your design partner</p>
 							</div>
@@ -102,12 +107,12 @@
 						</div>
 					</div><!-- end row -->
 					<div class="row">
-						<div class="col-md-12 col-xl-11">
+						<div class="col-md-12 col-lg-11">
 							<div class="margin-top-40">
 								<p class="font-large column-count-2">Having spent most of his career at digital agencies, John has worked on projects for some of the world's biggest brands. Subsequently, he co-founded a two-person studio that grew into a multi-awarded agency within a year. Nowadays, John provides the same agency-grade services and white-glove treatment to a select few clients worldwide. He also hates talking about himself in the third person &mdash; unless he's writing his bio.</p>
 							</div>
 							<div class="margin-top-50">
-								<img src="assets/images/jm-signature.png" class="signature">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 69.7" width="104" height="56" style="enable-background:new 0 0 128 69.7" xml:space="preserve"><path class="path" opacity="0.7" d="M1.4 68.8s2-5.1 5.4-22.8c3.3-17.2 3.9-44.7 0-44.7S2.4 11.6 2.4 17c0 5.2 2.8 14.7 10.6 13.5 7.7-1.1 9.2-10.5 9.2-10.5l-2.7 15.8s4.3-12 6.3-12 .9 10.3 2.7 10.3 2.4-5.7 3.6-5.7c1.1 0 3.1 5.9 7.7 7.7 4.5 1.7 18.3 1.7 37.6 1s46.1-2.7 46.1-2.7" style="fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"/></svg>
 							</div>
 						</div>
 					</div><!-- end row -->
@@ -115,80 +120,59 @@
 			</div>
 			<!-- end Hero section -->
 
-			<!-- Counter section -->
-			<div class="section-xl padding-top-0 d-none d-lg-block">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-2">
-							<h6 class="h1 display-4 margin-bottom-20 manrope"><span class="counter">15</span>+</h6>
-							<p class="font-large">years of design experience</p>
-						</div>
-						<div class="col-xl-2">
-							<h6 class="h1 display-4 margin-bottom-20 manrope"><span class="counter">48</span>h</h6>
-							<p class="font-large">average turn around time</p>
-						</div>
-						<div class="col-xl-2">
-							<h6 class="h1 display-4 margin-bottom-20 manrope"><span class="counter">75</span>%</h6>
-							<p class="font-large">more savings vs hiring in-house</p>
-						</div>
-					</div><!-- end row -->
-				</div><!-- end container -->
-			</div>
-			<!-- end Counter section -->
-
 			<!-- Services section -->
 			<div class="section-xl padding-top-0" id="services">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-12 col-xl-9">
+					<div class="row" data-sal="fade" data-sal-delay="100">
+						<div class="col-lg-12 col-xl-9">
 							<div class="margin-bottom-40">
 								<p class="uppercase letter-spacing-1">Capabilities</p>
 							</div>
-							<h2 class="display-5 line-height-130 font-weight-bold margin-bottom-60">Get the job of four people done with half the salary of one.</h1>
+							<h2 class="display-5 line-height-130 font-weight-bold margin-bottom-60">Get the job of <span class="counter">4</span> people done with less than half the salary of one.</h2>
 						</div>
 					</div><!-- end row -->
-					<div class="row">
-						<div class="col-md-12 col-xl-3">
+					<div class="row" data-sal="fade" data-sal-delay="100">
+						<div class="col-md-12 col-lg-3">
 							<p class="font-large">Hustleware brings the reliability of an in-house designer and the skills of a design agency.</p>
-							<a class="button button-fancy-3-outline-white margin-top-40 margin-bottom-20 mailtoui" href="mailto:%68%65%6c%6c%6f%40%68%75%73%74%6c%65%77%61%72%65%2e%63%6f%6d?subject=Portfolio">Request portfolio</a>
-							<a class="button button-fancy-3-outline-white margin-bottom-40" href="#pricing">Compare plans</a>
+							<p class="line-height-0 margin-top-40 margin-bottom-20"><a class="button button-md button-radius button-outline-white w-193px mailtoui" href="mailto:%68%65%6c%6c%6f%40%68%75%73%74%6c%65%77%61%72%65%2e%63%6f%6d?subject=Portfolio">Request folio</a></p>
+							<p class="line-height-0 margin-bottom-40"><a class="button button button-md button-radius button-outline-white w-193px" href="#pricing">View pricing</a></p>
 						</div>
-						<div class="col-md-12 col-xl-8 offset-xl-1">
+						<div class="col-md-12 col-lg-8 offset-lg-1">
 							<ul class="accordion single-open style-2">
 								<li>
 									<div class="accordion-title">
-										<h6 class="h4 font-weight-bold">Logo and Brand Identity</h6>
+										<h3 class="h4 font-weight-bold">Strategy and Consulting</h3>
 									</div>
 									<div class="accordion-content font-large">
-										<p>Business goals plus bright ideas can make magic. Let’s put our heads together to build a system that makes your brand look like a million bucks.</p>
-										<p class="margin-top-10">Logos &middot; Visual identities &middot; Brand guidelines &middot; Business cards</p>
+										<p>Design is not just about making a bunch of pretty pictures. Looks matter, but you don't need to win beauty contests. You need to win customers again and again.</p>
+										<p class="margin-top-20"><span class="button button-font-2 white-bg-005 text-white">Action Plans</span> <span class="button button-font-2 white-bg-005 text-white">Design Guidance</span> <span class="button button-font-2 white-bg-005 text-white">Creative Directions</span> <span class="button button-font-2 white-bg-005 text-white">&ctdot;</span></p>
 									</div>
 								</li>
 								<li>
 									<div class="accordion-title">
-										<h6 class="h4 font-weight-bold">Websites and Digital Products</h6>
+										<h3 class="h4 font-weight-bold">Logo and Brand Identity</h3>
+									</div>
+									<div class="accordion-content font-large">
+										<p>Business goals plus bright ideas can make magic. Let us put our heads together to build a system that makes your brand look like a million bucks.</p>
+										<p class="margin-top-20"><span class="button button-font-2 white-bg-005 text-white">Logos</span> <span class="button button-font-2 white-bg-005 text-white">Visual Identities</span> <span class="button button-font-2 white-bg-005 text-white">Style Guides</span> <span class="button button-font-2 white-bg-005 text-white">Business Cards</span> <span class="button button-font-2 white-bg-005 text-white">&ctdot;</span></p>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-title">
+										<h3 class="h4 font-weight-bold">Websites and Products</h3>
 									</div>
 									<div class="accordion-content font-large">
 										<p>These things can be somewhat complicated for business people. Hustleware is the tech junkie you can talk to without the nerdy acronyms and stuff.</p>
-										<p class="margin-top-10">Websites &middot; Landing pages &middot; Web Apps &middot; Design systems &middot; No-code</p>
+										<p class="margin-top-20"><span class="button button-font-2 white-bg-005 text-white">Websites</span> <span class="button button-font-2 white-bg-005 text-white">Landing Pages</span> <span class="button button-font-2 white-bg-005 text-white">SaaS</span> <span class="button button-font-2 white-bg-005 text-white">Web Apps</span> <span class="button button-font-2 white-bg-005 text-white">eCommerce</span> <span class="button button-font-2 white-bg-005 text-white">Webflow</span> <span class="button button-font-2 white-bg-005 text-white">&ctdot;</span></p>
 									</div>
 								</li>
 								<li>
 									<div class="accordion-title">
-										<h6 class="h4 font-weight-bold">Social Media and Marketing</h6>
+										<h3 class="h4 font-weight-bold">Social Media and Marketing</h3>
 									</div>
 									<div class="accordion-content font-large">
-										<p>
-											Whether it's a head-turner on the street or something click-worthy and scroll-stopping online, your creative will always be on-brand &mdash; cohesively and consistently.</p>
-										<p class="margin-top-10">Social media assets &middot; Ads &middot; Emails &middot; Flyers &middot; Decks</p>
-									</div>
-								</li>
-								<li>
-									<div class="accordion-title">
-										<h6 class="h4 font-weight-bold">Strategy and Consulting</h6>
-									</div>
-									<div class="accordion-content font-large">
-										<p>Without a strategy, all that design work is just a bunch of pretty pictures. Looks matter, but you don't need to win beauty contests. You need to win customers again and again.</p>
+										<p>Whether it's a head-turner on the street or something click-worthy and scroll-stopping online, your creative will always be on-brand &mdash; cohesively and consistently.</p>
+										<p class="margin-top-20"><span class="button button-font-2 white-bg-005 text-white">Social Media Assets</span> <span class="button button-font-2 white-bg-005 text-white">Ads</span> <span class="button button-font-2 white-bg-005 text-white">Emails</span> <span class="button button-font-2 white-bg-005 text-white">Flyers</span> <span class="button button-font-2 white-bg-005 text-white">&ctdot;</span></p>
 									</div>
 								</li>
 							</ul>
@@ -202,62 +186,127 @@
 			<div class="section-xl padding-top-0" id="benefits">
 				<div class="container">
 					<div class="row">
+						<div class="col-lg-12 col-xl-8">
+							<div class="margin-bottom-40">
+								<p class="uppercase letter-spacing-1">Privileges</p>
+							</div>
+							<h2 class="display-5 line-height-130 font-weight-bold margin-bottom-40">Everything you have always wanted from a design service.</h2>
+							<div class="margin-bottom-60">
+								<p class="font-large">Get ready to say adios, sayonara, and au revoir to unreliable freelancers, overpriced agencies, and junior designers who take all their sick leaves in the first month.</p>
+							</div>
+						</div>
+					</div><!-- end row -->
+					<div class="row">
 						<div class="col-md-12">
 							<div class="row">
-								<div class="col-12 col-lg-4">
-								   <div class="f-box style-1 rounded">
-									   <div class="f-box-icon">
-										   <img src="assets/images/all_inclusive_FILL0_wght200_GRAD0_opsz48.svg">
-									   </div>
-									   <h3 class="h4 font-weight-bold">Limitless design</h3>
-									   <p class="font-large">Subscribe to a plan and request as many designs as you like.</p>
-								   </div>
-							   </div>
-							   <div class="col-12 col-lg-4">
-								   <div class="f-box style-1 rounded">
-									   <div class="f-box-icon">
-										   <img src="assets/images/acute_FILL0_wght200_GRAD0_opsz48.svg">
-									   </div>
-									   <h3 class="h4 font-weight-bold">Express delivery</h3>
-									   <p class="font-large">Get your design one at a time within a few business days.</p>
-								   </div>
-							   </div>
-							   <div class="col-12 col-lg-4">
-								   <div class="f-box style-1 rounded">
-									   <div class="f-box-icon">
-										   <img src="assets/images/approval_delegation_FILL0_wght200_GRAD0_opsz48.svg">
-									   </div>
-									   <h3 class="h4 font-weight-bold">Polished quality</h3>
-									   <p class="font-large">Tweaked and tuned until your design hits the sweet spot.</p>
-								   </div>
-							   </div>
-								<div class="col-12 col-lg-4">
-									<div class="f-box style-1 rounded">
+									<div class="col-12 col-lg-4">
+									<div class="f-box style-2 rounded">
 										<div class="f-box-icon">
-											<img src="assets/images/sync_FILL0_wght200_GRAD0_opsz48.svg">
+											<img src="assets/images/all_inclusive_FILL0_wght200_GRAD0_opsz48.svg">
 										</div>
-										<h3 class="h4 font-weight-bold">Simplified workflow</h3>
-										<p class="font-large">Totally async. No calls or meetings to fill your calendar.</p>
+										<h3 class="h4 font-weight-bold">Limitless design</h3>
+										<p class="font-large">No cap. Subscribe and request as many designs as you like.</p>
 									</div>
 								</div>
-							   <div class="col-12 col-lg-4">
-									<div class="f-box style-1 rounded">
+								<div class="col-12 col-lg-4">
+									<div class="f-box style-2 rounded">
+										<div class="f-box-icon">
+											<img src="assets/images/acute_FILL0_wght200_GRAD0_opsz48.svg">
+										</div>
+										<h3 class="h4 font-weight-bold">Express delivery</h3>
+										<p class="font-large">Get your design one at a time within a few business days.</p>
+									</div>
+								</div>
+								<div class="col-12 col-lg-4">
+									<div class="f-box style-2 rounded">
+										<div class="f-box-icon">
+											<img src="assets/images/approval_delegation_FILL0_wght200_GRAD0_opsz48.svg">
+										</div>
+										<h3 class="h4 font-weight-bold">Polished quality</h3>
+										<p class="font-large">Tweaked and tuned until your design hits the sweet spot.</p>
+									</div>
+								</div>
+								<div class="col-12 col-lg-4">
+									<div class="f-box style-2 rounded">
+										<div class="f-box-icon">
+											<img src="assets/images/category_FILL0_wght200_GRAD0_opsz48.svg">
+										</div>
+										<h3 class="h4 font-weight-bold">Multiple brands</h3>
+										<p class="font-large">Create unlimited brand profiles that you can link to requests.</p>
+									</div>
+								</div>
+							   	<div class="col-12 col-lg-4">
+									<div class="f-box style-2 rounded">
+										<div class="f-box-icon">
+											<img src="assets/images/flowsheet_FILL0_wght200_GRAD0_opsz48.svg">
+										</div>
+										<h3 class="h4 font-weight-bold">Seamless workflow</h3>
+										<p class="font-large">Track progress, reorder queue, and add requests with ease.</p>
+									</div>
+								</div>
+								<div class="col-12 col-lg-4">
+									<div class="f-box style-2 rounded">
+										<div class="f-box-icon">
+											<img src="assets/images/business_messages_FILL0_wght200_GRAD0_opsz48.svg">
+										</div>
+										<h3 class="h4 font-weight-bold">Timezone-friendly</h3>
+										<p class="font-large">Async Slack chat. No calls or meetings to fill your calendar.</p>
+									</div>
+								</div>
+								<div class="col-12 col-lg-4">
+									<div class="f-box style-2 rounded">
+										<div class="f-box-icon">
+											<img src="assets/images/switch_account_FILL0_wght200_GRAD0_opsz48.svg">
+										</div>
+										<h3 class="h4 font-weight-bold">Invite your team</h3>
+										<p class="font-large">Bring your whole team if you need to at no extra cost.</p>
+									</div>
+								</div>
+								<div class="col-12 col-lg-4">
+										<div class="f-box style-2 rounded">
+											<div class="f-box-icon">
+												<img src="assets/images/event_repeat_FILL0_wght200_GRAD0_opsz48.svg">
+											</div>
+											<h3 class="h4 font-weight-bold">Predictable pricing</h3>
+											<p class="font-large">No surprises. Pay the same fixed amount each month.</p>
+										</div>
+								</div>
+								<div class="col-12 col-lg-4">
+										<div class="f-box style-2 rounded">
+											<div class="f-box-icon">
+												<img src="assets/images/aspect_ratio_FILL0_wght200_GRAD0_opsz48.svg">
+											</div>
+											<h3 class="h4 font-weight-bold">Scalable plans</h3>
+											<p class="font-large">Scale up or down as needed, and cancel at anytime.</p>
+										</div>
+								</div>
+								<div class="col-12 col-lg-4">
+									<div class="f-box style-2 rounded">
+										<div class="f-box-icon">
+											<img src="assets/images/package_2_FILL0_wght200_GRAD0_opsz48.svg">
+										</div>
+										<h3 class="h4 font-weight-bold">Complete ownership</h3>
+										<p class="font-large">You own the designs delivered to you. Source files included.</p>
+									</div>
+								</div>
+							   	<div class="col-12 col-lg-4">
+									<div class="f-box style-2 rounded">
+										<div class="f-box-icon">
+											<img src="assets/images/fingerprint_FILL0_wght200_GRAD0_opsz48.svg">
+										</div>
+										<h3 class="h4 font-weight-bold">Bespoke service</h3>
+										<p class="font-large">No templates. Every design is unique and made just for you.</p>
+									</div>
+								</div>
+								<div class="col-12 col-lg-4">
+									<div class="f-box style-2 rounded">
 										<div class="f-box-icon">
 											<img src="assets/images/psychology_FILL0_wght200_GRAD0_opsz48.svg">
 										</div>
-										<h3 class="h4 font-weight-bold">Senior-level talent</h3>
+										<h3 class="h4 font-weight-bold">Seasoned pro</h3>
 										<p class="font-large">Work directly with a designer who has <span class="counter">15</span>+ years' experience.</p>
 									</div>
-							   </div>
-							   <div class="col-12 col-lg-4">
-									<div class="f-box style-1 rounded">
-										<div class="f-box-icon">
-											<img src="assets/images/event_seat_FILL0_wght200_GRAD0_opsz48.svg">
-										</div>
-										<h3 class="h4 font-weight-bold">First-class seats</h3>
-										<p class="font-large">Subscription is open to only a handful of clients per month.</p>
-									</div>
-							   </div>
+								</div>
 						   </div>
 						</div>
 					</div><!-- end row -->
@@ -265,91 +314,91 @@
 			</div>
 			<!-- end Benefits section -->
 
-			<!-- Testimonial section -->
-			<div class="section-xl padding-top-0">
+			<!-- Process section -->
+			<div class="section-xl padding-top-0" id="process">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-12 col-xl-6">
-							<h2 class="display-5 line-height-130 font-weight-bold margin-bottom-40">In others’ words…</h1>
-						</div>
-					</div><!-- end row -->
-					<div class="row">
-						<div class="col-12 col-xl-6">
-							<div class="margin-bottom-30">
-								<p class="font-large">Working with Hustleware was a pleasure, and John's expert advice on branding has been refreshing and valuable. The outcome is a total compliment magnet and an elegant brand identity that I feel proud to call my own.</p>
-							</div>
-							<div>
-								<p class="uppercase letter-spacing-1">&mdash; Gab P, Parcero</p>
+					<div class="row icon-xl">
+						<div class="col-lg-12 col-xl-4">
+							<h2 class="display-5 line-height-130 font-weight-bold margin-bottom-40">A partnership made painless</h2>
+							<div class="margin-bottom-60">
+								<p class="font-large">It's as smooth as sipping a perfect cup of coffee on a Sunday morning.</p>
 							</div>
 						</div>
-						<div class="col-12 col-xl-6">
-							<div class="margin-bottom-30">
-								<p class="font-large">The designs have received nothing but "wow" from everyone who has seen them. I love the concept with the street lantern that John came up with &mdash; and so do our customers. Hustleware delivered on time, on budget, and on target.</p>
+						<div class="col-lg-12 col-xl-7 offset-xl-1">
+							<div class="sf-box sf-box-xl dark margin-bottom-40">
+								<div class="sf-box-icon border">
+									<span class="manrope h4 font-weight-bold">01</span>
+								</div>
+								<h3 class="font-weight-bold">Request</h3>
+								<p class="font-large">No pesky proposals. No annoying contracts to sign. Subscribe to a plan and submit as many design requests as you need without worrying about individual project costs.</p>
 							</div>
-							<div>
-								<p class="uppercase letter-spacing-1">&mdash; Len C, Entrepreneur</p>
+							<div class="sf-box sf-box-xl dark margin-bottom-40">
+								<div class="sf-box-icon border">
+									<span class="manrope h4 font-weight-bold">02</span>
+								</div>
+								<h3 class="font-weight-bold">Review</h3>
+								<p class="font-large">On average, you can expect your design to arrive within 2-3 business days. Monday to Friday. Approve design, give feedback or request changes until you're over the moon.</p>
+							</div>
+							<div class="sf-box sf-box-xl dark">
+								<div class="sf-box-icon border">
+									<span class="manrope h4 font-weight-bold">03</span>
+								</div>
+								<h3 class="font-weight-bold">Repeat</h3>
+								<p class="font-large">Let's do that again. Every design you request will be delivered one at a time, in the order of your priority, so keep those design requests coming.</p>
 							</div>
 						</div>
 					</div><!-- end row -->
 				</div><!-- end container -->
 			</div>
-			<!-- end Testimonial section -->
+			<!-- end Process section -->
 
 			<!-- Pricing section -->
 			<div class="section-xl padding-top-0" id="pricing">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12 col-xl-6">
+						<div class="col-lg-12 col-xl-9">
 							<div class="margin-bottom-40">
 								<p class="uppercase letter-spacing-1">Pricing</p>
 							</div>
-							<h2 class="display-5 line-height-130 font-weight-bold margin-bottom-40">Choose a smarter way to source design.</h1>
+							<h2 class="display-5 line-height-130 font-weight-bold margin-bottom-40">Only one slot available per month.</h2>
 							<div class="margin-bottom-60">
-								<p class="font-large">No headaches. No lock-in contracts. Pause or cancel anytime.</p>
+								<p class="font-large">Next slot will be available in <span class="countdown manrope" data-countdown="2023/11/03"></span></p>
 							</div>
 						</div>
 					</div><!-- end row -->
 					<div class="row">
 						<div class="col-12 col-lg-6">
-							<div class="f-box style-2 font-large rounded">
-								<h6 class="h6 font-weight-normal margin-bottom-10 letter-spacing-0">Starter</h6>
-								<h1 class="display-5 margin-bottom-10 manrope">$<span class="counter">2</span>.<span class="counter">5</span>K</h1>
-								<span class="">per month</span>
+							<div class="f-box style-2 rounded white-bg-001">
+								<h3 class="font-larger font-weight-normal margin-bottom-10 letter-spacing-0">Starter</h3>
+								<h4 class="h1 display-5 margin-bottom-10 manrope">$<span class="counter">2500</span></h4>
+								<span class="font-large">per month &middot; billed monthly</span>
 								<hr class="margin-top-40 margin-bottom-10">
-								<ul class="list-unstyled">
-									<li><span class="ti-bolt-alt margin-right-10"></span>1 active request at a time</li>
+								<ul class="list-unstyled font-large">
+									<li><span class="ti-bolt-alt margin-right-10"></span>One active request at a time</li>
 									<hr class="margin-top-10 margin-bottom-10">
-									<li><span class="ti-bolt-alt margin-right-10"></span>Average <span class="counter">48</span> hour delivery</li>
+									<li><span class="ti-bolt-alt margin-right-10"></span>All services and privileges</li>
 									<hr class="margin-top-10 margin-bottom-10">
-									<li><span class="ti-bolt-alt margin-right-10"></span>Access to all design services</li>
-									<hr class="margin-top-10 margin-bottom-10">
-									<li><span class="ti-bolt-alt margin-right-10"></span>No-code web development</li>
-									<hr class="margin-top-10 margin-bottom-10">
-									<li class="text-white-02"><span class="ti-bolt-alt margin-right-10"></span>Communicate via Slack</li>
+									<li><span class="ti-bolt-alt margin-right-10"></span>Pause or cancel anytime</li>
 									<hr class="margin-top-10 margin-bottom-50">
 								</ul>
-								<a class="button button-fancy-3-outline-white margin-bottom-20 mailtoui" href="mailto:%68%65%6c%6c%6f%40%68%75%73%74%6c%65%77%61%72%65%2e%63%6f%6d?subject=Starter">Get in touch</a>
+								<a class="button button-md button-radius button-outline-white margin-bottom-20 mailtoui" href="mailto:%68%65%6c%6c%6f%40%68%75%73%74%6c%65%77%61%72%65%2e%63%6f%6d?subject=Starter">Secure your slot</a>
 							</div>
 						</div>
 						<div class="col-12 col-lg-6">
-							<div class="f-box style-2 font-large rounded">
-								<h6 class="h6 font-weight-normal margin-bottom-10 letter-spacing-0">Accelerator</h6>
-								<h1 class="display-5 margin-bottom-10 manrope">$<span class="counter">4</span>.<span class="counter">5</span>K</h1>
-								<span class="">per month</span>
+							<div class="f-box style-2 rounded white-bg-001">
+								<h3 class="font-larger font-weight-normal margin-bottom-10 letter-spacing-0">Accelerator</h3>
+								<h4 class="h1 display-5 margin-bottom-10 manrope">$<span class="counter">4500</span></h4>
+								<span class="font-large">per month &middot; billed monthly</span>
 								<hr class="margin-top-40 margin-bottom-10">
-								<ul class="list-unstyled">
-									<li><span class="ti-bolt-alt margin-right-10"></span><span class="counter">2</span> active requests at a time</li>
+								<ul class="list-unstyled font-large">
+									<li><span class="ti-bolt-alt margin-right-10"></span>Two active requests at a time</li>
 									<hr class="margin-top-10 margin-bottom-10">
-									<li><span class="ti-bolt-alt margin-right-10"></span>Average <span class="counter">48</span> hour delivery</li>
+									<li><span class="ti-bolt-alt margin-right-10"></span>All services and privileges</li>
 									<hr class="margin-top-10 margin-bottom-10">
-									<li><span class="ti-bolt-alt margin-right-10"></span>Access to all design services</li>
-									<hr class="margin-top-10 margin-bottom-10">
-									<li><span class="ti-bolt-alt margin-right-10"></span>No-code web development</li>
-									<hr class="margin-top-10 margin-bottom-10">
-									<li><span class="ti-bolt-alt margin-right-10"></span>Communicate via Slack</li>
+									<li><span class="ti-bolt-alt margin-right-10"></span>Pause or cancel anytimes</li>
 									<hr class="margin-top-10 margin-bottom-50">
 								</ul>
-								<a class="button button-fancy-3-outline-white margin-bottom-20 mailtoui" href="mailto:%68%65%6c%6c%6f%40%68%75%73%74%6c%65%77%61%72%65%2e%63%6f%6d?subject=Accelerator">Get in touch</a>
+								<a class="button button-md button-radius button-outline-white margin-bottom-20 mailtoui" href="mailto:%68%65%6c%6c%6f%40%68%75%73%74%6c%65%77%61%72%65%2e%63%6f%6d?subject=Accelerator">Secure your slot</a>
 							</div>
 						</div>
 					</div><!-- end row -->
@@ -361,46 +410,54 @@
 			<div class="section-xl padding-top-0" id="faq">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12 col-xl-4">
-							<h2 class="display-5 line-height-130 margin-bottom-40 font-weight-bold">Questions? Answers.</h1>
+						<div class="col-lg-12 col-xl-4">
+							<h2 class="display-5 line-height-130 margin-bottom-40 font-weight-bold">Questions? Answers.</h2>
 						</div>
-						<div class="col-12 col-xl-8">
+						<div class="col-lg-12 col-xl-8">
 							<ul class="accordion single-open style-2 rounded">
 								<li>
 									<div class="accordion-title">
-										<h6 class="h4 font-weight-bold">What happens after I subscribe?</h6>
+										<h4 class="h4 font-weight-bold">What happens after I subscribe?</h4>
 									</div>
 									<div class="accordion-content font-large">
-										<p>You will get a welcome email. You will also receive an invite to join a Trello board that will be created for you, where you will be able to make design requests and keep track of progress.</p>
+										<p>You'll get a welcome email. You'll also receive an invite to join a private Slack channel and a kanban board that will be created for you, where you'll be able to make design requests and keep track of progress. At this point you can also ask your questions on Slack.</p>
 									</div>
 								</li>
 								<li>
 									<div class="accordion-title">
-										<h6 class="h4 font-weight-bold">What type of jobs aren't covered?</h6>
+										<h4 class="h4 font-weight-bold">Who will I be working with?</h4>
 									</div>
 									<div class="accordion-content font-large">
-										<p>Complex illustrations &middot; Complex photo manipulations &middot; Digital painting and game assets &middot; 3D  &middot; Motion graphics &middot; Video editing &middot; Prototyping &middot; Mobile Apps &middot; Full-code web development &middot; Annual reports &middot; Fillable or interactive PDF documents</p>
+										<p>You'll be working directly with the founder of Hustleware, John Monte, who has over 15 years of design experience. This means you'll get personalized senior-level attention and top-notch service. Help may be requested from other designers when needed.</p>
 									</div>
 								</li>
 								<li>
 									<div class="accordion-title">
-										<h6 class="h4 font-weight-bold">How does one-request-at-a-time work?</h6>
+										<h4 class="h4 font-weight-bold">What does one active request at a time mean?</h4>
 									</div>
 									<div class="accordion-content font-large">
-										<p>Once subscribed, you can add as many requests in the backlog as you like. Each will be completed one by one, and your request will be moved to the completed section in Trello once it's finished. Meanwhile, work can begin on the next request in the queue until you provide a feedback on the previous request.</p>
+										<p>Once subscribed, you can add as many requests in the backlog as you like. Each request will be completed one by one, and your request will be moved to the completed section in the kanban board once it's finished. Meanwhile, work can begin on the next request in the queue until you provide a feedback on the previous request.</p>
 									</div>
 								</li>
 								<li>
 									<div class="accordion-title">
-										<h6 class="h4 font-weight-bold">How fast will I receive designs?</h6>
+										<h4 class="h4 font-weight-bold">How fast will I receive designs?</h4>
 									</div>
 									<div class="accordion-content font-large">
-										<p>It takes 1-3 business days on average to receive a first draft. Design projects, by nature, have a wide range of scopes. So for smaller tasks a delivery will usually mean a completed design. For complex requests, the task will be divided into milestones and delivered accordingly.</p>
+										<p>It takes 2 business days on average to receive a first draft. Design projects, by nature, have a wide range of scopes. So for smaller tasks a delivery will usually mean a completed design. For complex requests, the task will be divided into milestones and delivered accordingly.</p>
 									</div>
 								</li>
 								<li>
 									<div class="accordion-title">
-										<h6 class="h4 font-weight-bold">Who owns the rights to the designs?</h6>
+										<h4 class="h4 font-weight-bold">How many designs do I get in a month?</h4>
+									</div>
+									<div class="accordion-content font-large">
+										<p>It depends on how many requests you make and how big they are. The average turnaround time is 2-3 days so if you always have requests in your backlog and give prompt feedback, a lot of design work will get done each month.</p>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-title">
+										<h4 class="h4 font-weight-bold">Who owns the rights to the designs?</h4>
 									</div>
 									<div class="accordion-content font-large">
 										<p>You have 100% ownership of the designs the moment they're delivered. This includes the actual design and the source files.</p>
@@ -408,23 +465,31 @@
 								</li>
 								<li>
 									<div class="accordion-title">
-										<h6 class="h4 font-weight-bold">What if I'm not happy with the design?</h6>
+										<h4 class="h4 font-weight-bold">What if I don't like the initial design?</h4>
 									</div>
 									<div class="accordion-content font-large">
-										<p>This almost never happens. Nevertheless, your subscription includes unlimited revisions until you're 100% satisfied with the output.</p>
+										<p>No worries. Your subscription includes unlimited changes until you're pleased with the result.</p>
 									</div>
 								</li>
 								<li>
 									<div class="accordion-title">
-										<h6 class="h4 font-weight-bold">What design tools do you use?</h6>
+										<h4 class="h4 font-weight-bold">What design tools do you use?</h4>
 									</div>
 									<div class="accordion-content font-large">
-										<p>Most requests are designed using Figma. Illustrator or Photoshop in some cases. Webflow or Framer for no-code development.</p>
+										<p>Most requests are designed using Figma. Webflow for no-code development.</p>
 									</div>
 								</li>
 								<li>
 									<div class="accordion-title">
-										<h6 class="h4 font-weight-bold">Do you offer refunds?</h6>
+										<h4 class="h4 font-weight-bold">What type of jobs aren't covered?</h4>
+									</div>
+									<div class="accordion-content font-large">
+										<p>Complex illustrations &middot; Complex packaging &middot; Complex photo manipulations &middot; Digital painting and game assets &middot; 3D  &middot; GIFs &middot; Motion graphics &middot; Video editing &middot; Full-code web development &middot; Domain and hosting &middot; Copywriting &middot; Fillable or interactive PDF documents</p>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-title">
+										<h4 class="h4 font-weight-bold">Do you offer refunds?</h4>
 									</div>
 									<div class="accordion-content font-large">
 										<p>Unfortunately not. Due to the amount of research and pressure put in to produce high-quality work in a short period of time, it becomes difficult to justify going uncompensated for the time and effort.</p>
@@ -432,7 +497,7 @@
 								</li>
 								<li>
 									<div class="accordion-title">
-										<h6 class="h4 font-weight-bold">What if I still have questions?</h6>
+										<h4 class="h4 font-weight-bold">What if I still have questions?</h4>
 									</div>
 									<div class="accordion-content font-large">
 										<p>If you have any additional questions feel free to contact <a href="mailto:%68%65%6c%6c%6f%40%68%75%73%74%6c%65%77%61%72%65%2e%63%6f%6d" class="mailtoui">&#104;&#101;&#108;&#108;&#111;&#64;&#104;&#117;&#115;&#116;&#108;&#101;&#119;&#97;&#114;&#101;&#46;&#99;&#111;&#109;</a></p>
@@ -449,10 +514,10 @@
 			<div class="section-xl padding-top-0">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12 col-xl-10">
+						<div class="col-lg-12 col-xl-10">
 							<h2 class="display-4 font-weight-bold margin-0">Still on the fence? Feel free to ask anything that's holding you back.</h2>
 							<div class="margin-top-50">
-								<a class="button button-xl button-rounded button-fancy-3-outline-white mailtoui" href="mailto:%68%65%6c%6c%6f%40%68%75%73%74%6c%65%77%61%72%65%2e%63%6f%6d">Start a conversation</a>
+								<a class="button button-lg button-radius button-outline-white mailtoui" href="mailto:%68%65%6c%6c%6f%40%68%75%73%74%6c%65%77%61%72%65%2e%63%6f%6d">Start a conversation</a>
 							</div>
 						</div>
 					</div><!-- end row -->
@@ -473,6 +538,8 @@
 							<ul class="list-inline">
 								<li><a href="#about">About</a></li>
 								<li><a href="#services">Services</a></li>
+								<li><a href="#benefits">Benefits</a></li>
+								<li><a href="#process">Process</a></li>
 								<li><a href="#pricing">Pricing</a></li>
 								<li><a href="#faq">FAQ</a></li>
 								<li><a href="mailto:%68%65%6c%6c%6f%40%68%75%73%74%6c%65%77%61%72%65%2e%63%6f%6d" class="mailtoui">Contact</a></li>

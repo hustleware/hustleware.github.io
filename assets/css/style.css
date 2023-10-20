@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
 
 .pagination .page-item .page-link:hover {
     color: #0A0908;
@@ -435,6 +435,9 @@ div[class^='bg-white'].fm-wrapper .fm-close span:before, div[class^='bg-white'].
     .header-menu-wrapper .header-menu .m-item .m-dropdown .m-dropdown-item .m-dropdown-link.active {
       color: #0A0908;
     }
+    .timezone {
+        width: 85px !important;
+    }
   }
 
   @media (min-width: 992px) {
@@ -650,147 +653,193 @@ div[class^='bg-dark'] div[class^='bg-white'] .stroke-text, div[class^='bg-dark']
 .owl-carousel {
     cursor: grab;
   }
-  
-  .owl-carousel.owl-grab {
+
+.owl-carousel.owl-grab {
     cursor: grabbing;
-  }
-  
-  .ldquo {
+}
+
+.ldquo {
     position: relative;
-  }
-  
-  .ldquo::before {
+}
+
+.ldquo::before {
     position: absolute;
     top: 0;
     left: -20px;
     content: "“";
     font-size: inherit;
-  }
-  
-  .manrope {
+}
+
+.manrope {
     font-family: 'Manrope', sans-serif;
-  }
-  
-  .logo .wordmark img,
-  .wordmark img {
+}
+
+.logo .wordmark img,
+.wordmark img {
     max-height: 20px;
-  }
-  
-  .signature {
-    height: 48px;
+}
+
+.signature {
+    height: 56px;
     opacity: 0.7;
-  }
-  
-  .column-count-2 {
+}
+
+.column-count-2 {
     column-count: 1;
     column-gap: 40px;
-  }
-  
-  .line-height-0 {
+}
+
+.line-height-0 {
     line-height: 0;
-  }
-  
-  @media (min-width: 1025px) {
-    .column-count-2 {
-      column-count: 2;
-    }
-  }
-  
-  @media (min-width: 381px) {
-    .logo .wordmark img,
-    .wordmark img {
-      max-height: 22px;
-    }
-  }
-  
-  /* Start MailtoUI */
-  
-  .mailtoui-modal {
+}
+
+div[class^="bg-dark"] .f-box.style-2:hover, div[class*=" bg-dark"] .f-box.style-2:hover, .bg-black .f-box.style-2:hover {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.white-bg-005 {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.white-bg-001 {
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.white-bg-001:hover {
+    background: rgba(255, 255, 255, 0.01) !important;
+}
+
+.timezone {
+    width: 100px;
+}
+
+.w-193px {
+    width: 193px;
+    text-align: center;
+}
+
+@media (min-width: 1025px) {
+.column-count-2 {
+    column-count: 2;
+}
+}
+
+@media (min-width: 381px) {
+.logo .wordmark img,
+.wordmark img {
+    max-height: 22px;
+}
+}
+
+/* Start MailtoUI */
+
+.mailtoui-modal {
     color: #777;
     font-size: 90%;
-  }
-  
-  .mailtoui-modal a:hover,
-  .mailtoui-modal a:focus {
+}
+
+.mailtoui-modal a:hover,
+.mailtoui-modal a:focus {
     border-bottom: none;
-  }
-  
-  .mailtoui-modal-close {
+}
+
+.mailtoui-modal-close {
     font-size: 28px;
-  }
-  
-  .mailtoui-modal-close:focus,
-  .mailtoui-modal-close:hover {
-   font-weight: 400; 
-  }
-  
-  .mailtoui-modal-head {
+}
+
+.mailtoui-modal-close:focus,
+.mailtoui-modal-close:hover {
+    font-weight: 400; 
+}
+
+.mailtoui-modal-head {
     background-color: #0A0908;
-  }
-  
-  .mailtoui-modal-title {
+}
+
+.mailtoui-modal-title {
     color: #fff;
     font-size: 100%;
     font-weight: 400;
-  }
-  
-  .mailtoui-modal-close:focus,
-  .mailtoui-modal-close:hover {
+}
+
+.mailtoui-modal-close:focus,
+.mailtoui-modal-close:hover {
     color: #fff;
-  }
-  
-  .mailtoui-modal-body {
+}
+
+.mailtoui-modal-body {
     background-color: #221E1B;
-  }
-  
-  .mailtoui-button-content,
-  .mailtoui-button-copy {
+}
+
+.mailtoui-button-content,
+.mailtoui-button-copy {
     background-color: #171412;
     color: #777;
-  }
-  
-  .mailtoui-button:hover .mailtoui-button-content,
-  .mailtoui-button:focus .mailtoui-button-content {
+}
+
+.mailtoui-button:hover .mailtoui-button-content,
+.mailtoui-button:focus .mailtoui-button-content {
     background-color: #0A0908;
     color: #fff;
-  }
-  
-  .mailtoui-modal-content {
+}
+
+.mailtoui-modal-content {
     border-radius: 10px;
     background: #221E1B;
     box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.02);
-  }
-  
-  .mailtoui-button-content {
+}
+
+.mailtoui-button-content {
     box-shadow: none;
-  }
-  
-  .mailtoui-button-icon {
+}
+
+.mailtoui-button-icon {
     top: -2px;
-  }
-  
-  .mailtoui-button-content:hover,
-  .mailtoui-button-content:focus,
-  .mailtoui-button-copy:hover,
-  .mailtoui-button-copy:focus {
+}
+
+.mailtoui-button-content:hover,
+.mailtoui-button-content:focus,
+.mailtoui-button-copy:hover,
+.mailtoui-button-copy:focus {
     background-color: #0A0908;
     color: #fff;
-  }
-  
-  .mailtoui-button-copy-clicked,
-  .mailtoui-button-copy-clicked:hover,
-  .mailtoui-button-copy-clicked:focus {
+}
+
+.mailtoui-button-copy-clicked,
+.mailtoui-button-copy-clicked:hover,
+.mailtoui-button-copy-clicked:focus {
     background-color: #0A0908;
     color: #fff;
-  }
-  
-  .mailtoui-email-address {
+}
+
+.mailtoui-email-address {
     background-color: #0A0908;
     color: #777;
-  }
-  
-  .mailtoui-brand {
+}
+
+.mailtoui-brand {
     display: none;
-  }
+}
 
 /* End MailtoUI */
+
+/* Start Signature Animation */
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 2s ease-in-out forwards normal;
+    animation-delay: 1s;
+  }
+
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+/* End Signature Animation */

@@ -11,7 +11,7 @@ function clock(e, t) {
   e = document.getElementById(e);
   try {
     return function n() {
-      let h, m, d = new Date;
+      let h, m, s, d = new Date;
       d.setHours(d.getUTCHours() + t),
       h = d.getHours() < 10 ? '0' + d.getHours() : d.getHours(),
       m = d.getMinutes() < 10 ? '0' + d.getMinutes() : d.getMinutes(),
