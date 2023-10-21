@@ -23,3 +23,4 @@ function clock(e, t) {
     console.log('Error: ' + e + ' in ' + clock.name)
   }
 }
+

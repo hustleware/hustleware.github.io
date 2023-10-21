@@ -719,6 +719,11 @@ div[class^="bg-dark"] .f-box.style-2:hover, div[class*=" bg-dark"] .f-box.style-
     text-align: center;
 }
 
+#cf-context { 
+    width: 100vw; 
+    height: 100vh; 
+  } 
+
 @media (min-width: 1025px) {
 .column-count-2 {
     column-count: 2;
