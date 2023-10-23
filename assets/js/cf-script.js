@@ -4,11 +4,11 @@ window.onload = function () {
     context: document.getElementById("cf-context"),
     theme: 'dark',
     showProgressBar: true,
-    submitCallback: function () {
-      conversationalForm.addRobotChatResponse(
-        "That is the end of the form. Thank you."
-      );
-    }
+    // submitCallback: function () {
+    //   conversationalForm.addRobotChatResponse(
+    //     "That is the end of the form. Thank you."
+    //   );
+    // }
   });
 };
 
