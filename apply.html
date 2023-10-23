@@ -4,24 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Primary Meta Tags -->
-  <title>Hustleware</title>
-  <meta name="title" content="Hustleware" />
+  <title>Application — Hustleware</title>
+  <meta name="title" content="Application — Hustleware" />
   <meta name="description"
-    content="Collaborative design partner for early-stage founders, agency owners, and resilient entrepreneurs." />
-  <meta name="copyright" content="John Monte" />
+    content="Hustleware is an exclusive design service." />
+    <meta name="robots" content="noindex,nofollow" />
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://hustleware.com" />
-  <meta property="og:title" content="Hustleware" />
+  <meta property="og:url" content="https://hustleware.com/apply.html" />
+  <meta property="og:title" content="Application — Hustleware" />
   <meta property="og:description"
-    content="Collaborative design partner for early-stage founders, agency owners, and resilient entrepreneurs." />
+    content="Hustleware is an exclusive design service." />
   <meta property="og:image" content="https://hustleware.com/assets/images/social.jpg" />
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://hustleware.com" />
-  <meta property="twitter:title" content="Hustleware" />
+  <meta property="twitter:url" content="https://hustleware.com/apply.html" />
+  <meta property="twitter:title" content="Application — Hustleware" />
   <meta property="twitter:description"
-    content="Collaborative design partner for early-stage founders, agency owners, and resilient entrepreneurs." />
+    content="Hustleware is an exclusive design service." />
   <meta property="twitter:image" content="https://hustleware.com/assets/images/social.jpg" />
   <!-- Favicon -->
   <link href="assets/images/favicon.png" rel="shortcut icon">
@@ -36,51 +36,57 @@
 <body data-preloader="1" class="bg-dark">
 
   <form method="post" id="form" class="form" action="https://submit-form.com/C7qNJniv" cf-form>
-    <!-- Ref URL Parameters -->
-    <input type="hidden" name="subject" id="subject">
+    <!-- Ref Parameters -->
+    <input type="hidden" name="ref" id="ref">
+    <!--Intro -->
+    <cf-robot-message cf-questions="Hey there."></cf-robot-message>
+    <input cf-questions="I just need to ask a few questions to see if we're a good fit.&&Don't worry, this should only take a few minutes." cf-label="Start" type="radio" checked>
     <!-- First Name -->
-    <input type="text" name="fname" id="fname" cf-input-placeholder="Enter your first name"
-      cf-questions="Hey there.&&What's your name?" required cf-error="Enter your first name|Input is missing">
+    <input type="text" name="name" id="name" cf-input-placeholder="Enter your first name"
+      cf-questions="What's your name by the way?" required cf-error="Enter your first name|Input is missing">
     <!-- Company Name -->
     <input type="text" name="company" id="company" cf-input-placeholder="Enter your company name"
-      cf-questions="Nice to meet you, {fname}.&&What's the name of your company?" required
+      cf-questions="Nice to meet you, {name}.&&What's the name of your company?" required
       cf-error="Enter your company name|Input is missing">
     <!-- Company Description -->
-    <input type="text" name="position" id="position" cf-input-placeholder="Enter your company profile"
-      cf-questions="Tell me more.&&What does your company do?" required
-      cf-error="Enter your company profile|Input is missing">
+    <textarea type="text" rows="1" name="description" id="description" cf-input-placeholder="Enter your company description"
+      cf-questions="What does {company} do?" required
+      cf-error="Enter your company description|Input is missing"></textarea>
     <!-- Position -->
-    <input type="text" name="position" id="position" cf-input-placeholder="Enter your position and job description"
-      cf-questions="And what is it that you do?" required
-      cf-error="Enter your position and job description|Input is missing">
+    <textarea type="text" rows="1" name="position" id="position" cf-input-placeholder="Enter your position and job description"
+      cf-questions="And what is it that you do?&&Tell me about your role. What is your day to day like?" required
+      cf-error="Enter your position and job description|Input is missing"></textarea>
     <!-- Services -->
-    <select name="services" id="services" cf-questions="What type of design services are you most interested in?"
+    <select name="services" id="services" cf-questions="Which of these design services do you need help with?"
       required multiple>
-      <option val="logo">Logos</option>
-      <option val="identity">Visual identity</option>
-      <option val="website">Websites</option>
-      <option val="apps">Web apps</option>
-      <option val="lpages">Landing page</option>
-      <option val="webflow">Webflow</option>
-      <option val="socmed">Social media assets</option>
-      <option val="ads">Digital ads</option>
-      <option val="emails">Emails</option>
-      <option val="flyers">Flyers</option>
-      <option val="bcards">Business cards</option>
-      <option val="decks">Pitch decks</option>
-      <option val="packaging">Packaging</option>
-      <option val="consulting">Consulting</option>
+      <option value="logo">Logos</option>
+      <option value="identities">Visual identities</option>
+      <option value="websites">Websites</option>
+      <option value="apps">Apps</option>
+      <option value="lpages">Landing pages</option>
+      <option value="webflow">Webflow</option>
+      <option value="socmed">Social media</option>
+      <option value="ads">Ads</option>
+      <option value="emails">Emails</option>
+      <option value="flyers">Flyers</option>
+      <option value="bcards">Business cards</option>
+      <option value="decks">Pitch decks</option>
+      <option value="others">Others</option>
     </select>
+    <input type="text" name="other-services" cf-questions="I see you selected Others.&&What other design services do you have in mind?" cf-conditional-services="^others$">
     <!-- Date -->
     <fieldset cf-questions="When are you looking to get started?" required>
-      <label for="start-one">Within a month
-        <input type="radio" name="start" id="start-one" value="within a month">
+      <label for="start-one">Within 1 month
+        <input type="radio" name="start" id="start-one" value="within 1 month">
       </label>
       <label for="start-quarter">Within 3 months
         <input type="radio" name="start" id="start-quarter" value="within 3 months">
       </label>
       <label for="start-half">Within 6 months
         <input type="radio" name="start" id="start-half" value="within 6 months">
+      </label>
+      <label for="start-full">Within 12 months
+        <input type="radio" name="start" id="start-full" value="within 12 months">
       </label>
     </fieldset>
     <!-- Email -->
@@ -89,8 +95,9 @@
     <!-- Others -->
     <input type="text" id="else" name="else" cf-questions="Anything else I should know?">
     <input type="checkbox" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off" />
-    <input type="hidden" name="_email.subject" value="You have a new message!" />
-    <!-- <input type="hidden" name="_redirect" value="https://hustleware.com/thanks.html" /> -->
+    <input type="hidden" name="_email.subject" value="You have a new message" />
+    <input type="hidden" name="_redirect" value="https://hustleware.com/success.html" />
+    <input type="hidden" name="_append" value="false" />
     <!-- Submit -->
     <button type="submit">Send</button>
   </form>
@@ -105,6 +112,7 @@
   <script src="assets/plugins/plugins.js"></script>
   <script src="assets/js/functions.js"></script>
   <script src="assets/js/cf-script.js"></script>
+  <!-- <script src="https://unpkg.com/@botpoison/browser" async></script> -->
 </body>
 
 </html>
