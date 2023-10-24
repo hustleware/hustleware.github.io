@@ -39,25 +39,71 @@
     <!-- Ref Parameters -->
     <input type="hidden" name="ref" id="ref">
     <!--Intro -->
-    <cf-robot-message cf-questions="Hey there."></cf-robot-message>
-    <input cf-questions="I just need to ask a few questions to see if we're a good fit.&&Don't worry, this should only take a few minutes." cf-label="Start" type="radio" checked>
+    <cf-robot-message cf-questions="Not everything we do have to be put out in public."></cf-robot-message>
+    <cf-robot-message cf-questions="Let's take a few minutes to see if we're a good fit&&and then you can receive the private link via email.&&Don't worry, you only need to answer a few questions."></cf-robot-message>
     <!-- First Name -->
     <input type="text" name="name" id="name" cf-input-placeholder="Enter your first name"
-      cf-questions="What's your name by the way?" required cf-error="Enter your first name|Input is missing">
+      cf-questions="Btw, what's your name?" required cf-error="Enter your first name|Input is missing">
     <!-- Company Name -->
     <input type="text" name="company" id="company" cf-input-placeholder="Enter your company name"
       cf-questions="Nice to meet you, {name}.&&What's the name of your company?" required
       cf-error="Enter your company name|Input is missing">
     <!-- Company Description -->
     <textarea type="text" rows="1" name="description" id="description" cf-input-placeholder="Enter your company description"
-      cf-questions="What does {company} do?" required
+      cf-questions="What does your company do?&&Also share the website link if there is one." required
       cf-error="Enter your company description|Input is missing"></textarea>
     <!-- Position -->
     <textarea type="text" rows="1" name="position" id="position" cf-input-placeholder="Enter your position and job description"
-      cf-questions="And what is it that you do?&&Tell me about your role. What is your day to day like?" required
+      cf-questions="And what is it that you do?&&Describe your role. What's your day to day like?" required
       cf-error="Enter your position and job description|Input is missing"></textarea>
+    <!-- Experience -->
+    <fieldset cf-questions="Have you ever worked with a freelancer or an agency before?" required>
+      <label for="hired-yes">Yes
+        <input type="radio" name="hired" id="hired-yes" value="yes">
+      </label>
+      <label for="hired-no">No
+        <input type="radio" name="hired" id="hired-no" value="no">
+      </label>
+    </fieldset>
+    <textarea type="text" rows="1" name="yes-hired" cf-questions="How was it? Can you share your experience?" cf-conditional-hired="^yes$"></textarea>
+    <!-- Date -->
+    <fieldset cf-questions="When are you looking to get started?" required>
+      <label for="start-asap">As soon as possible
+        <input type="radio" name="start" id="start-asap" value="as soon as possible">
+      </label>
+      <label for="start-one">Within a month
+        <input type="radio" name="start" id="start-one" value="within a month">
+      </label>
+      <label for="start-quarter">Within 3 months
+        <input type="radio" name="start" id="start-quarter" value="within 3 months">
+      </label>
+      <label for="start-half">Within 6 months
+        <input type="radio" name="start" id="start-half" value="within 6 months">
+      </label>
+      <label for="start-full">Within a year
+        <input type="radio" name="start" id="start-full" value="within a year">
+      </label>
+    </fieldset>
+    <!-- Span -->
+    <fieldset cf-questions="Based on your budget, how long do you plan to work continously with Hustleware?" required>
+      <label for="span-asap">Less than a month
+        <input type="radio" name="span" id="span-asap" value="less than a month">
+      </label>
+      <label for="span-one">Just a month
+        <input type="radio" name="span" id="span-one" value="just a month">
+      </label>
+      <label for="span-quarter">2-3 months
+        <input type="radio" name="span" id="span-quarter" value="2-3 months">
+      </label>
+      <label for="span-half">4-6 months
+        <input type="radio" name="span" id="span-half" value="4-6 months">
+      </label>
+      <label for="span-full">6-12 months
+        <input type="radio" name="span" id="span-full" value="6-12 months">
+      </label>
+    </fieldset>
     <!-- Services -->
-    <select name="services" id="services" cf-questions="Which of these design services do you need help with?"
+    <select name="services" id="services" cf-questions="In {span}, which of these design services do you need help with?"
       required multiple>
       <option value="logo">Logos</option>
       <option value="identities">Visual identities</option>
@@ -73,27 +119,12 @@
       <option value="decks">Pitch decks</option>
       <option value="others">Others</option>
     </select>
-    <input type="text" name="other-services" cf-questions="I see you selected Others.&&What other design services do you have in mind?" cf-conditional-services="^others$">
-    <!-- Date -->
-    <fieldset cf-questions="When are you looking to get started?" required>
-      <label for="start-one">Within 1 month
-        <input type="radio" name="start" id="start-one" value="within 1 month">
-      </label>
-      <label for="start-quarter">Within 3 months
-        <input type="radio" name="start" id="start-quarter" value="within 3 months">
-      </label>
-      <label for="start-half">Within 6 months
-        <input type="radio" name="start" id="start-half" value="within 6 months">
-      </label>
-      <label for="start-full">Within 12 months
-        <input type="radio" name="start" id="start-full" value="within 12 months">
-      </label>
-    </fieldset>
+    <input type="text" name="other-services" cf-questions="You selected Others.&&What other design services do you have in mind?" cf-conditional-services="^others$">
     <!-- Email -->
-    <input type="email" id="email" name="email" cf-input-placeholder="Enter your work email"
-      cf-questions="Got it.&&Where can I email you back?" required>
+    <input type="email" id="email" name="email" cf-input-placeholder="e.g., david@dundermifflin.com"
+      cf-questions="Got it.&&Where would you like to get the private link if ever?" required>
     <!-- Others -->
-    <input type="text" id="else" name="else" cf-questions="Anything else I should know?">
+    <input type="text" id="else" name="else" cf-questions="Anything else you would like to share, ask, or clarify?">
     <input type="checkbox" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off" />
     <input type="hidden" name="_email.subject" value="You have a new message" />
     <input type="hidden" name="_redirect" value="https://hustleware.com/success.html" />
