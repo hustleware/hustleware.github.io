@@ -427,6 +427,9 @@ div[class^='bg-white'].fm-wrapper .fm-close span:before, div[class^='bg-white'].
     background: #0A0908;
 }
 
+.section-fullscreen.with-header-lg {
+    height: calc(100vh - 100px);
+}
 
 @media (max-width: 991.98px) {
     .header-menu-wrapper .header-menu .m-item .m-link.active {
@@ -437,6 +440,9 @@ div[class^='bg-white'].fm-wrapper .fm-close span:before, div[class^='bg-white'].
     }
     .timezone {
         width: 85px !important;
+    }
+    .section-fullscreen.with-header-lg {
+        height: calc(100vh - 70px);
     }
   }
 

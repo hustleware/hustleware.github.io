@@ -39,14 +39,19 @@
     <!-- Ref Parameters -->
     <input type="hidden" name="ref" id="ref">
     <!--Intro -->
-    <cf-robot-message cf-questions="Not everything we do have to be put out in public."></cf-robot-message>
-    <cf-robot-message cf-questions="Let's take a few minutes to see if we're a good fit&&and then you can receive the private link via email.&&Don't worry, you only need to answer a few questions."></cf-robot-message>
+    <cf-robot-message cf-questions="Hey there."></cf-robot-message>
+    <cf-robot-message cf-questions="Not everything have been put out in public.&&Some are kept private to those who qualify."></cf-robot-message>
+    <cf-robot-message cf-questions="Let's take a few minutes to see if we're a good fit&&and then you can receive the private link via email."></cf-robot-message>
+    <input cf-questions="Don't worry, you only need to answer a few questions." cf-label="Let's do this" type="radio" selected>
     <!-- First Name -->
-    <input type="text" name="name" id="name" cf-input-placeholder="Enter your first name"
-      cf-questions="Btw, what's your name?" required cf-error="Enter your first name|Input is missing">
+    <input type="text" name="fname" id="fname" cf-input-placeholder="Enter your first name"
+      cf-questions="Awesome.&&Let's start with your first name?" required cf-error="Enter your first name|Input is missing">
+    <!-- Last Name -->
+    <input type="text" name="lname" id="lname" cf-input-placeholder="Enter your last name"
+      cf-questions="Nice to meet you, {fname}. What's your last name?" required cf-error="Enter your last name|Input is missing">
     <!-- Company Name -->
     <input type="text" name="company" id="company" cf-input-placeholder="Enter your company name"
-      cf-questions="Nice to meet you, {name}.&&What's the name of your company?" required
+      cf-questions="What's the name of your company?" required
       cf-error="Enter your company name|Input is missing">
     <!-- Company Description -->
     <textarea type="text" rows="1" name="description" id="description" cf-input-placeholder="Enter your company description"
