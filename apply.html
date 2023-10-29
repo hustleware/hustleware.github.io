@@ -40,9 +40,8 @@
     <input type="hidden" name="ref" id="ref">
     <!--Intro -->
     <cf-robot-message cf-questions="Hey there."></cf-robot-message>
-    <cf-robot-message cf-questions="Not everything have been put out in public.&&Some are kept private to those who qualify."></cf-robot-message>
-    <cf-robot-message cf-questions="Let's take a few minutes to see if we're a good fit&&and then you can receive the private link via email."></cf-robot-message>
-    <input cf-questions="Don't worry, you only need to answer a few questions." cf-label="Let's do this" type="radio" checked>
+    <input cf-questions="Not everything have been put out in public.&&Some are kept private to those who qualify." cf-label="Come on. Just let me in." name="moreinfo" type="radio" checked>
+    <input cf-questions="Let's take a few minutes to see if we're a good fit&&and then you can receive the private link via email.&&Don't worry, you only need to answer a few questions." cf-label="Okay. Let's do this." name="getstarted" type="radio" checked>
     <!-- First Name -->
     <input type="text" name="fname" id="fname" cf-input-placeholder="Enter your first name"
       cf-questions="Awesome.&&Let's start with your first name?" required cf-error="Enter your first name|Input is missing">
@@ -108,7 +107,7 @@
       </label>
     </fieldset>
     <!-- Services -->
-    <select name="services" id="services" cf-questions="In {span}, which of these design services do you need help with?"
+    <select name="services" id="services" cf-questions="And in {span}, which of these design services do you need help with?"
       required multiple>
       <option value="logo">Logos</option>
       <option value="identities">Visual identities</option>
@@ -126,7 +125,7 @@
     </select>
     <input type="text" name="other-services" cf-questions="You selected Others.&&What other design services do you have in mind?" cf-conditional-services="^others$">
     <!-- Email -->
-    <input type="email" id="email" name="email" cf-input-placeholder="e.g., david@dundermifflin.com"
+    <input type="email" id="email" name="email" cf-input-placeholder="Enter your work email"
       cf-questions="Got it.&&Where would you like to get the private link if ever?" required>
     <!-- Others -->
     <input type="text" id="else" name="else" cf-questions="Anything else you would like to share, ask, or clarify?">
