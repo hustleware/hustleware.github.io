@@ -39,15 +39,15 @@
     <!-- Ref Parameters -->
     <input type="hidden" name="ref" id="ref">
     <!--Intro -->
-    <cf-robot-message cf-questions="Hey there."></cf-robot-message>
-    <input cf-questions="Not everything have been put out in public.&&Some are kept private to those who qualify." cf-label="Come on. Just let me in." name="moreinfo" type="radio" checked>
-    <input cf-questions="Let's take a few minutes to see if we're a good fit&&and then you can receive the private link via email.&&Don't worry, you only need to answer a few questions." cf-label="Okay. Let's do this." name="getstarted" type="radio" checked>
+    <cf-robot-message cf-questions="Hey there.||Hello there."></cf-robot-message>
+    <input cf-questions="Not everything have been put out in public.&&Some are kept private to those who qualify." cf-label="Tell me more" name="moreinfo" type="radio" checked>
+    <input cf-questions="Let's take a few minutes to see if we're a good fit&&and then you can receive the private link via email.&&Don't worry, you only need to answer a few questions." cf-label="Let's do this" name="getstarted" type="radio" checked>
     <!-- First Name -->
     <input type="text" name="fname" id="fname" cf-input-placeholder="Enter your first name"
-      cf-questions="Awesome.&&Let's start with your first name?" required cf-error="Enter your first name|Input is missing">
+      cf-questions="Let's start with your first name?" required cf-error="Enter your first name|Input is missing">
     <!-- Last Name -->
     <input type="text" name="lname" id="lname" cf-input-placeholder="Enter your last name"
-      cf-questions="Nice to meet you, {fname}. What's your last name?" required cf-error="Enter your last name|Input is missing">
+      cf-questions="Nice to meet you, {fname}.&&What's your last name?" required cf-error="Enter your last name|Input is missing">
     <!-- Company Name -->
     <input type="text" name="company" id="company" cf-input-placeholder="Enter your company name"
       cf-questions="What's the name of your company?" required
@@ -125,8 +125,8 @@
     </select>
     <input type="text" name="other-services" cf-questions="You selected Others.&&What other design services do you have in mind?" cf-conditional-services="^others$">
     <!-- Email -->
-    <input type="email" id="email" name="email" cf-input-placeholder="Enter your work email"
-      cf-questions="Got it.&&Where would you like to get the private link if ever?" required>
+    <input type="email" id="email" name="email" cf-input-placeholder="Enter your email address"
+      cf-questions="Got it. One last question after this and we're done.&&Where would you like to get the private link if ever?" required>
     <!-- Others -->
     <input type="text" id="else" name="else" cf-questions="Anything else you would like to share, ask, or clarify?">
     <input type="checkbox" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off" />
