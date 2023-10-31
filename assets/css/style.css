@@ -849,3 +849,103 @@ div[class^="bg-dark"] .f-box.style-2:hover, div[class*=" bg-dark"] .f-box.style-
   }
 
 /* End Signature Animation */
+
+#mouse-scroll {
+    position: fixed;
+    margin: auto;
+    right: 35px;
+    bottom: 30px;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+#mouse-scroll .mouse {
+    height: 21px;
+    width: 14px;
+    border-radius: 10px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    border: 1px solid #ffffff;
+}
+#mouse-scroll .mouse-in {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: #ffffff;
+    position: relative;
+    animation: animated-mouse 1.2s ease infinite;
+}
+#mouse-scroll .down-arrow-1, 
+#mouse-scroll .down-arrow-2, 
+#mouse-scroll .down-arrow-3 {
+     animation: mouse-scroll 1s infinite;
+}
+#mouse-scroll .down-arrow-1 {
+    margin-top: 6px;
+}
+#mouse-scroll .down-arrow-2 {
+    animation-delay: .2s;
+    animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-3 {
+    animation-delay: .3s;
+    animation-direction: alternate;
+}
+#mouse-scroll span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 0 0 3px 5px;
+}
+
+@keyframes animated-mouse {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+         opacity: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+
+@keyframes mouse-scroll {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    } 
+}
+@keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1023px) {
+    #mouse-scroll {
+        display: none;
+        opacity: 0;
+    }
+}

@@ -23,3 +23,14 @@ function clock(e, t) {
     console.log('Error: ' + e + ' in ' + clock.name)
   }
 }
+
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+  if(scroll > 10){
+      $('#mouse-scroll').fadeOut();
+  }
+else {
+  $('#mouse-scroll').fadeIn();
+  }
+
+});
