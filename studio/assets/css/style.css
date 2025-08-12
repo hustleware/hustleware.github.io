@@ -945,3 +945,19 @@ div[class^="bg-dark"] .f-box.style-2:hover, div[class*=" bg-dark"] .f-box.style-
         opacity: 0;
     }
 }
+
+.footer {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer .logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 30px;
+}
