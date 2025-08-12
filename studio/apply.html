@@ -40,7 +40,7 @@
     <input type="hidden" name="ref" id="ref">
     <!--Intro -->
     <cf-robot-message cf-questions="Hello there."></cf-robot-message>
-    <input cf-questions="Let's take a few minutes to see if we're a good fit&&and then you can access more information if you qualify.&&Don't worry, you only need to answer a few questions." cf-label="Let's do this" name="getstarted" type="radio" checked>
+    <input cf-questions="Let's take a few minutes to see if we're a good fit&&Don't worry, you only need to answer a few questions." cf-label="Let's do this" name="getstarted" type="radio" checked>
     <!-- First Name -->
     <input type="text" name="fname" id="fname" cf-input-placeholder="Enter your first name"
       cf-questions="Let's start with your first name?" required cf-error="Enter your first name|Input is missing">
@@ -106,7 +106,7 @@
       </label>
     </fieldset>
     <!-- Services -->
-    <select name="services" id="services" cf-questions="And in {span}, which of these design services do you need help with?"
+    <select name="services" id="services" cf-questions="And in {span}, which of these design services do you need help with?" cf-input-placeholder="Enter selected option/s"
       required multiple>
       <option value="logo">Logos</option>
       <option value="identities">Visual identities</option>
