@@ -404,6 +404,7 @@ div[class^='bg-white'].fm-wrapper .fm-close span:before, div[class^='bg-white'].
 
 .header-menu-wrapper .header-menu .m-item .m-link {
     font-family: "Inter", sans-serif;
+    font-size: 15px;
 }
 
 .header-menu-wrapper .header-menu .m-item .m-link.m-dropdown-toggle:hover:before, .header-menu-wrapper .header-menu .m-item .m-link.m-dropdown-toggle:hover:after {
