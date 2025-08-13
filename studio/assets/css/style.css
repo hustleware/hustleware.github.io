@@ -512,6 +512,12 @@ div[class^='bg-white'].fm-wrapper .fm-close span:before, div[class^='bg-white'].
     border-color: #0A0908 rgba(20, 22, 24, 0.2) rgba(20, 22, 24, 0.2) rgba(20, 22, 24, 0.2);
 }
 
+.product-badge-left,
+.product-badge-right {
+    padding: 4px 8px !important;
+    border-radius: 0 !important;
+}
+
 .product-quantity .qnt .dec:before, .product-quantity .qnt .inc:before {
     background: #0A0908;
 }
@@ -832,7 +838,7 @@ div[class^="bg-dark"] .f-box.style-2:hover, div[class*=" bg-dark"] .f-box.style-
 
 /* End MailtoUI */
 
-/* Start Signature Animation */
+/* SVG Stroke Animation */
 
 .path {
     stroke-dasharray: 1000;
@@ -963,7 +969,12 @@ div[class^="bg-dark"] .f-box.style-2:hover, div[class*=" bg-dark"] .f-box.style-
     right: 0;
     bottom: 0;
     margin: 0 auto;
-    max-width: 1140px;
     width: 100%;
-    padding: 0 30px;
+    padding: 0 50px;
+}
+
+@media (max-width: 1280px) {
+    .footer .logo {
+        max-width: 1180px;
+    }
 }
