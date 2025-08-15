@@ -363,6 +363,38 @@ a[class^='button-ct'] .button-ct-text {
   background: #0A0908;
 }
 
+.owl-carousel .owl-nav button.owl-prev {
+  left: -16px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  right: -16px;
+}
+
+.owl-carousel[data-owl-nav="true"]:not(.owl-nav-left):not(.owl-nav-right):not(.owl-nav-overlay):not(.owl-nav-overlay-left):not(.owl-nav-overlay-right):not(.owl-nav-overlap):not(.owl-nav-overlap-left):not(.owl-nav-overlap-right) {
+  padding: 0 20px;
+}
+
+@media (max-width: 991.98px) {
+    .owl-carousel[data-owl-nav="true"]:not(.owl-nav-left):not(.owl-nav-right):not(.owl-nav-overlay):not(.owl-nav-overlay-left):not(.owl-nav-overlay-right):not(.owl-nav-overlap):not(.owl-nav-overlap-left):not(.owl-nav-overlap-right) {
+    padding: 0;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+    left: -24px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+    right: -24px;
+    }
+}
+
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .comment-box .comment-reply a {
     font-family: "Inter", sans-serif;
 }
