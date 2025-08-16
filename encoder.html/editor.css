@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+:root {
+    --eerie: #181818;
+    --black: #1e1e1e;
+    --white: #d4d4d4;
+    --gray: #707070;
+    --darkgray: #404040;
+    --blue: #569cd6;
+    --darkblue: #264f78;
+    --cyan: #9cdcfe;
+    --orange: #ce9178;
+    --green: #6A9955;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-variant-ligatures: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+    color: var(--gray);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: unset;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    transition: all 0.4s;
+    color: inherit;
+    border-bottom: 1px solid;
+}
+
+a:hover {
+    color: var(--blue);
+}
+
+.editor {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--eerie);
+    overflow-y: auto;
+    min-height: 68px;
+    border-radius: 6px;
+}
+
+.editor .linecount {
+    width: min-content;
+    min-width: 10px;
+    max-width: 26px;
+    text-align: right;
+}
+
+.editor .linecount span {
+    counter-increment: linenumber;
+}
+
+.editor .linecount span::before {
+    content: counter(linenumber);
+    display: block;
+    color: var(--gray);
+}
+
+.input,
+.output {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    resize: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: var(--eerie);
+    overflow-y: hidden;
+    width: calc(100vw - 66px);
+    max-width: 1300px;
+    margin-left: 20px;
+    transition: all 0.4s;
+    animation: fadeIn 0.4s;
+}
+
+.input {
+    color: var(--white);
+}
+
+.output {
+    color: var(--gray);
+}
+
+.float {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: inline-flex;
+    gap: 10px;
+}
+
+button {
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 18px;
+    min-height: 48px;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s;
+    animation: fadeIn 0.4s;
+    min-width: 88px;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.hide {
+    display: none;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    color: var(--white);;
+    background: var(--darkblue);
+}
+
+::selection {
+    text-shadow: none;
+    color: var(--white);;
+    background: var(--darkblue);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+/* start debug */
+/*
+
+[data-nosnippet],
+[data-nosnippet] span {
+    color: red !important;
+    background-color: rgba(0, 0, 0, 10%);
+}
+
+
+* {
+    outline: solid 1px red;
+}
+*/
+
+/* end debug */
