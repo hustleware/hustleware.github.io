@@ -4,7 +4,7 @@ const countdownDisplay = document.getElementById('countdown');
 function countdown() {
     countdownDisplay.textContent = seconds;
     if (seconds <= 0) {
-        window.location.href = 'https://www.figma.com/deck/Pm1vjDBuJyZVBzfyDbzhIB/Portfolio---John-Monte-2510';
+        window.location.href = 'https://www.figma.com/deck/y3yxm28o45UnlFvrV9pB6w/portfolio-john-monte-2601';
         return;
     }
     seconds--;
