@@ -756,6 +756,12 @@ img::-moz-selection {
   }
 }
 
+@media only screen and (min-width: 1367px) {
+  .filter-carousel {
+    overflow-x: hidden !important;
+  }
+}
+
 @media only screen and (max-width: 360px) {
   .card {
     max-width: 330px;
@@ -795,7 +801,7 @@ img::-moz-selection {
   z-index: 1000;
   background: #0C0B08;
   overflow-x: auto;
-  overflow-x: hidden;
+  overflow-y: hidden;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
   touch-action: pan-x; /* allows horizontal swipe */
