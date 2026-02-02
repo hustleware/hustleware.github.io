@@ -350,9 +350,11 @@ button {
   width: 100%;
 }
 
-.cta-btn:hover,
 .cta-btn:focus {
-  color: #efefef;
+  background-color: #0C0B08;
+}
+
+.cta-btn:hover {
   background-color: #605D57;
 }
 
@@ -365,7 +367,8 @@ button {
   margin-left: 6px;
 }
 
-.cta-icon.sec a {
+.cta-icon.sec a,
+.cta-icon.sec a:focus {
   color: #0C0B08;
   background-color: #efefef;
 }
@@ -375,7 +378,8 @@ button {
   background-color: #605D57;
 }
 
-.cta-icon.sec svg {
+.cta-icon.sec svg,
+.cta-icon.sec svg:focus {
   fill: #efefef;
 }
 
@@ -415,6 +419,11 @@ button {
   background-color: #efefef;
 }
 
+.cta-icon a:focus {
+  color: #efefef;
+  background-color: #0C0B08;
+}
+
 .cta-icon svg {
   fill: #0C0B08;
   width: 20px;
@@ -425,6 +434,10 @@ button {
 
 .cta-icon a:hover svg {
   fill: #efefef;
+}
+
+.cta-icon a:focus svg {
+  fill: #0C0B08;
 }
 
 .cta-icon a:not(:last-child) {
@@ -809,10 +822,10 @@ img::-moz-selection {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-x; /* allows horizontal swipe */
-  cursor: grab;        /* shows grab cursor on desktop */
-  user-select: none;   /* prevent text selection while dragging */
+/*   -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  cursor: grab;
+  user-select: none; */
   max-width: 350px;
   max-height: 60px;
   border-radius: 999px;
@@ -822,15 +835,15 @@ img::-moz-selection {
 
 .filter-track {
   display: inline-flex;
-  gap: 8px;
   padding: 14px 15px;
+  max-width: 400px;
 }
 
 .filter-btn {
   appearance: none;
-  border: 1px solid #53504e;
+  border: 1px solid #605D57;
   background: none;
-  color: #53504e;
+  color: #605D57;
   padding: 6px 16px;
   border-radius: 999px; /* pill */
   cursor: pointer;
@@ -838,10 +851,11 @@ img::-moz-selection {
   letter-spacing: 0.5px;
   white-space: nowrap;
   transition: all 0.2s ease;
+margin-right: 8px;
 }
 
 .filter-btn.active,
-.filter-btn:hover {
+.filter-btn:focus {
   background: #efefef;
   color: #0C0B08;
 }

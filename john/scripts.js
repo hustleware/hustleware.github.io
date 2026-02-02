@@ -172,7 +172,7 @@ $(function () {
 
 });
 
-$(function () {
+/* $(function () {
 
   const slider = $(".filter-carousel");
   let isDown = false;
@@ -201,7 +201,7 @@ $(function () {
     slider.scrollLeft(scrollLeft - walk);
   });
 
-});
+}); */
 
 $(document).ready(function () {
   $('.image-carousel').slick({
@@ -212,6 +212,18 @@ $(document).ready(function () {
     infinite: true,
     autoplay: true
   });
+$('.filter-track').slick({
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  slidesPerRow: 4,
+  infinite: true,
+  arrows: false,
+  dots: false,
+  variableWidth: true,
+  swipeToSlide: false,
+  touchThreshold: 10,
+});
+
 });
 
 //click to copy
