@@ -266,20 +266,5 @@ $(function () {
 
 });
 
-//
-
-$(function () {
-  const $navbar = $(".filter-carousel");
-  const offset = $navbar.offset().top;
-
-  $(window).on("scroll", function () {
-    if ($(window).scrollTop() > offset) {
-      $navbar.addClass("is-sticky");
-    } else {
-      $navbar.removeClass("is-sticky");
-    }
-  });
-});
-
 
 
