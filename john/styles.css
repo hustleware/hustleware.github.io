@@ -776,11 +776,11 @@ img::-moz-selection {
   }
 }
 
-@media only screen and (min-width: 1367px) {
+/*@media only screen and (min-width: 1367px) {
   .filter-carousel {
     overflow-x: hidden !important;
   }
-}
+}*/
 
 @media only screen and (max-width: 430px) {
   .card {
@@ -819,7 +819,7 @@ img::-moz-selection {
   top: 15px; 
   z-index: 1000;
   background: #0C0B08;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
 /*   -webkit-overflow-scrolling: touch;
