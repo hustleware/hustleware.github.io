@@ -172,37 +172,6 @@ $(function () {
 
 });
 
-/* $(function () {
-
-  const slider = $(".filter-carousel");
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  slider.on("mousedown", function (e) {
-    isDown = true;
-    slider.addClass("active"); // optional, for styling
-    startX = e.pageX - slider.offset().left;
-    scrollLeft = slider.scrollLeft();
-    slider.css("cursor", "grabbing");
-  });
-
-  slider.on("mouseleave mouseup", function () {
-    isDown = false;
-    slider.removeClass("active");
-    slider.css("cursor", "grab");
-  });
-
-  slider.on("mousemove", function (e) {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offset().left;
-    const walk = (x - startX) * 2; // scroll speed
-    slider.scrollLeft(scrollLeft - walk);
-  });
-
-}); */
-
 $(document).ready(function () {
   $('.image-carousel').slick({
     slidesToShow: 1,
@@ -214,13 +183,12 @@ $(document).ready(function () {
   });
 $('.filter-track').slick({
   slidesToShow: 4,
-  slidesToScroll: 4,
-  slidesPerRow: 4,
+  slidesToScroll: 1,
   infinite: true,
   arrows: false,
   dots: false,
   variableWidth: true,
-  swipeToSlide: false,
+  swipeToSlide: true,
   touchThreshold: 10,
 });
 
