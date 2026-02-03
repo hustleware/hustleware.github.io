@@ -125,6 +125,7 @@ button {
   height: 100%;
   transform: skewX(-10deg);
   background: linear-gradient(to right, rgb(255 255 255 / 0%) 0%, rgb(255 255 255 / 20%) 100%);
+  user-select: none;
 }
 
 @-webkit-keyframes shine {
@@ -790,6 +791,10 @@ img::-moz-selection {
   #toast.show {
     opacity: 0 !important;
     display: none !important;
+  }
+  .filter-btn:hover {
+    background: #efefef;
+    color: #0C0B08;
   }
 }
 
