@@ -788,6 +788,9 @@ img::-moz-selection {
     max-width: 330px;
     min-width: 330px;
   }
+  .filter-carousel {
+    max-width: 340px;
+  }
   #toast.show {
     opacity: 0 !important;
     display: none !important;
