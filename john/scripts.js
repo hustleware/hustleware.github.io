@@ -182,14 +182,14 @@ $(document).ready(function () {
     autoplay: true
   });
 $('.filter-track').slick({
-  slidesToShow: 4,
+  slidesToShow: 1,
   slidesToScroll: 1,
   infinite: true,
   arrows: false,
   dots: false,
   variableWidth: true,
   swipeToSlide: true,
-  touchThreshold: 10,
+  touchThreshold: 10
 });
 
 });
