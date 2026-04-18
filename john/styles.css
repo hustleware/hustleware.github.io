@@ -368,8 +368,7 @@ button {
   margin-left: 6px;
 }
 
-.cta-icon.sec a,
-.cta-icon.sec a:focus {
+.cta-icon.sec a {
   color: #0C0B08;
   background-color: #efefef;
 }
@@ -435,10 +434,6 @@ button {
 
 .cta-icon a:hover svg {
   fill: #efefef;
-}
-
-.cta-icon a:focus svg {
-  fill: #0C0B08;
 }
 
 .cta-icon a:not(:last-child) {
@@ -856,6 +851,7 @@ img::-moz-selection {
   white-space: nowrap;
   transition: all 0.2s ease;
   margin-right: 8px;
+  max-height: 30px;
 }
 
 .filter-btn.active,
