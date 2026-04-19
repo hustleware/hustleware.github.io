@@ -91,6 +91,7 @@ button {
   height: 100%;
   background-color: #A39C99;
   background-image: linear-gradient(to left top, #53504e, #615e5b, #706b69, #7f7a77, #8e8885, #999390, #a39d9a, #aea8a5, #b6b1ae, #bfbab8, #c7c3c1, #d0cccb);
+  z-index: -1;
 }
 
 .bg::after {
@@ -802,6 +803,7 @@ img::-moz-selection {
   .card {
     max-width: 330px;
     min-width: 330px;
+    transition: none;
   }
   .filter-carousel {
     max-width: 340px;
