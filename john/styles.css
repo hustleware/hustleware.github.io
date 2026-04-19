@@ -12,7 +12,7 @@
 
 body {
   color: #0C0B08;
-  background-color: #A39C99;
+  background: none;
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
   position: relative;
@@ -74,8 +74,6 @@ button {
 
 .theme {
   color: #0C0B08;
-  background-color: #A39C99;
-  background-image: linear-gradient(to left top, #53504e, #615e5b, #706b69, #7f7a77, #8e8885, #999390, #a39d9a, #aea8a5, #b6b1ae, #bfbab8, #c7c3c1, #d0cccb);
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +81,23 @@ button {
   transition: 0.3s;
   -webkit-animation: fadeIn 0.6s both;
   animation: fadeIn 0.6s both;
-  background-attachment: fixed;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #A39C99;
+  background-image: linear-gradient(to left top, #53504e, #615e5b, #706b69, #7f7a77, #8e8885, #999390, #a39d9a, #aea8a5, #b6b1ae, #bfbab8, #c7c3c1, #d0cccb);
+}
+
+.bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .container {
@@ -679,6 +693,7 @@ button {
   padding: 10px;
   margin-right: 10px;
   color: #605D57;
+  display: inline-flex;
 }
 
 .post .post-footnote a.icon:hover,
@@ -689,6 +704,11 @@ button {
 .post .post-footnote a.icon svg {
   width: 18px;
   height: 18px;
+}
+
+.post .post-footnote a.icon svg.star {
+  margin-left: 5px;
+  fill: #aea8a5;
 }
 
 .post .post-section {
