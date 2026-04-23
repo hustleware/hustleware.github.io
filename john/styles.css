@@ -74,7 +74,7 @@ button {
 
 .theme {
   color: #0C0B08;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
