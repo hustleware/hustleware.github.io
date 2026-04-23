@@ -857,7 +857,7 @@ img::-moz-selection {
 .filter-track {
   display: inline-flex;
   padding: 14px 15px;
-  max-width: 400px;
+  max-width: 380px;
 }
 
 .filter-btn {
