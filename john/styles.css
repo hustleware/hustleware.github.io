@@ -935,3 +935,7 @@ img::-moz-selection {
   height: 100% !important;
   border-radius: 8px !important;
 }
+
+.hide {
+    display: none !important;
+}
